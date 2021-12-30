@@ -30,12 +30,12 @@ function getParameterByNames(name, url) {
                                 }
 var hashlgo = getParameterByNames("s");
 
-var thewhre="https://www.iade.com/affiliates/?utm_source="+hashv0;
+var thewhre="https://www.iade.com/?utm_source="+hashv0;
 
 var hshvc = hashv0;
-if (hshvc=="") {var thewhre="https://www.iade.com/affiliates/";}
+if (hshvc=="") {var thewhre="https://www.iade.com/";}
 
-if (restw == "t.co") {var thewhre="https://www.iade.com/affiliates/?utm_source=twitter";} else {}
+if (restw == "t.co") {var thewhre="https://www.iade.com/?utm_source=twitter";} else {}
 if (hashlgo=="uyed") {document.write("<p style='text-align:center;font-size:32px'>Üye doğrulama bağlantısı ilk alışverişinizden sonra SMS ile telefon numaranıza gönderilmiştir. Eğer SMS'e ulaşamıyorsanız lütfen bizimle WhatsApp'dan iletişime geçiniz: 05061001090.</p>"); window.stop();}
 if (hashlgo=="uyedo") {document.write("<p style='text-align:center;font-size:32px'>Üye doğrulama bağlantısı ilk alışverişinizden sonra SMS ile telefon numaranıza gönderilmiştir. Eğer SMS'e ulaşamıyorsanız lütfen bizimle WhatsApp'dan iletişime geçiniz: 05061001090.</p>"); window.stop();}
 
@@ -46,7 +46,7 @@ if  (md.is('iPhone') == true) {alert("İADE uygulamasını yükleyebilmeniz içi
 if  (md.is("AndroidOS") == true)
 {alert("İADE uygulamasını yükleyebilmeniz için Google Play Store'a yönlendirileceksiniz."); 
 var thewhre="https://play.google.com/store/apps/details?id=com.stss.iade";}
-if  (md.is("AndroidOS") !== true && md.is('iPhone') !== true) {var thewhre="https://www.iade.com/affiliates/";}
+if  (md.is("AndroidOS") !== true && md.is('iPhone') !== true) {var thewhre="https://www.iade.com/";}
 }    
 </script>
 </head>
