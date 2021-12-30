@@ -1,1 +1,55 @@
-index
+<html>
+<head>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mobile-detect/1.4.4/mobile-detect.min.js"></script>
+<script>
+
+var hashv0first = document.referrer;
+var hashv0 = hashv0first.replace(/^(?:https?:\/\/)?(?:android-app?:\/\/)?(?:www\.)?(?:l\.)?(?:m\.)?(?:mobile\.)?/i, "").split('/')[0].split(".")[0];
+var restw = hashv0first.match(/t.co/g);
+
+var a = location.href; 
+var b = a.substring(a.indexOf("?")+1);
+//if (b.substring(0, 1)=="#")
+//document.write(b);
+
+if (b.substring(0, 1)=="#")
+{var hashrel = b.substring(1, 14);}
+else {var hashrel = "";}
+
+    
+function getParameterByNames(name, url) {
+                                    if (!url) url = window.location.href;
+                                    name = name.replace(/[\[\]]/g, '\\$&');
+                                    var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+                                        results = regex.exec(url);
+                                    if (!results) return null;
+                                    if (!results[2]) return '';
+                                    return decodeURIComponent(results[2].replace(/\+/g, ' '));
+                                }
+var hashlgo = getParameterByNames("s");
+
+var thewhre="https://www.iade.com/affiliates/?utm_source="+hashv0;
+
+var hshvc = hashv0;
+if (hshvc=="") {var thewhre="https://www.iade.com/affiliates/";}
+
+if (restw == "t.co") {var thewhre="https://www.iade.com/affiliates/?utm_source=twitter";} else {}
+if (hashlgo=="uyed") {document.write("<p style='text-align:center;font-size:32px'>Üye doğrulama bağlantısı ilk alışverişinizden sonra SMS ile telefon numaranıza gönderilmiştir. Eğer SMS'e ulaşamıyorsanız lütfen bizimle WhatsApp'dan iletişime geçiniz: 05061001090.</p>"); window.stop();}
+if (hashlgo=="uyedo") {document.write("<p style='text-align:center;font-size:32px'>Üye doğrulama bağlantısı ilk alışverişinizden sonra SMS ile telefon numaranıza gönderilmiştir. Eğer SMS'e ulaşamıyorsanız lütfen bizimle WhatsApp'dan iletişime geçiniz: 05061001090.</p>"); window.stop();}
+
+if (hashlgo=="app")
+{
+var md = new MobileDetect(window.navigator.userAgent);
+if  (md.is('iPhone') == true) {alert("İADE uygulamasını yükleyebilmeniz için App Store'a yönlendirileceksiniz."); var thewhre="https://apps.apple.com/tr/app/iade/id1518671758";}
+if  (md.is("AndroidOS") == true)
+{alert("İADE uygulamasını yükleyebilmeniz için Google Play Store'a yönlendirileceksiniz."); 
+var thewhre="https://play.google.com/store/apps/details?id=com.stss.iade";}
+if  (md.is("AndroidOS") !== true && md.is('iPhone') !== true) {var thewhre="https://www.iade.com/affiliates/";}
+}    
+</script>
+</head>
+<body onload="javascript:location.href = thewhre;"></body>
+<!--document-->
+</html>
