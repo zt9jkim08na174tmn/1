@@ -360,3 +360,15 @@ li.nav-item a{
     padding-top: 2px;
     color: hsl(9, 40%, 60%);
     }
+
+.modal {
+    overflow-y: auto !important;
+}
+
+.modal-open {
+    overflow: auto !important;
+}
+
+.modal-open[style] {
+    padding-right: 0px !important;
+}
