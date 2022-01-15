@@ -326,7 +326,7 @@ li.nav-item a{
 }
 
 .search-input::-webkit-input-placeholder { 
-    font-family: FontAwesome;
+    font-family: 'Poppins',sans-serif;
     font-weight: normal;
     overflow: visible;
     vertical-align: top;
@@ -337,7 +337,7 @@ li.nav-item a{
     }
     
     .search-input::-moz-placeholder  { 
-    font-family: FontAwesome;
+    font-family: 'Poppins',sans-serif;
     font-weight: normal;
     overflow: visible;
     vertical-align: top;
@@ -348,7 +348,7 @@ li.nav-item a{
     }
     
     .search-input:-ms-input-placeholder  { 
-    font-family: FontAwesome;
+    font-family: 'Poppins',sans-serif;
     font-weight: normal;
     overflow: visible;
     vertical-align: top;
