@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>iade.com</title>
+</head>
+<body>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+<script>
+
+var a = location.href; 
+hashrel=a.replace("https://iade.com/redirs.html", "");
+
+var hashv0first = document.referrer;
+var hashv0 = hashv0first.replace(/^(?:https?:\/\/)?(?:android-app?:\/\/)?(?:www\.)?(?:l\.)?(?:m\.)?(?:mobile\.)?/i, "").split('/')[0].split(".")[0];
+var hashrel2 = "utm_source="+hashv0;
+
+var restw = hashv0first.match(/t.co/g);
+if (restw == "t.co") {var hashrel2 = "utm_source=twitter";} else {}
+
+var serpr = hashrel.match("\\?");
+
+if (serpr=="?") {var seprv="&";} else {var seprv="?";}
+
+hashaprm=hashrel+seprv+hashrel2;
+//alert(navigator.userAgent);
+
+
+var text = navigator.userAgent;
+var pattern = /Googlebot|DuckDuckBot|Baiduspider|YandexBot|ia_archiver|ia_archiver|Sogou|Slurp|Bingbot|facebot|facebookexternalhit|bingbot|Mediapartners-Google|bingbot|AdsBot-Google|APIs-Google|FeedFetcher-Google|Google Favicon|YandexAdNet|YandexAccessibilityBot|YandexBlogs|YandexDirect|YandexFavicons|YandexImage|YandexMarket|YandexMedia|YandexMetrika|YaDirectFetcher|YandexForDomain|YandexCalendar|AdIdxBot|BingPreview|msnbot|Twitterbot|twitterbot|instagram|Instagram|fanshabot/;
+var result = pattern.test(text);
+
+if (result==true) {alert("true");}
+else
+{
+if(navigator.language.toLowerCase().substr(0,2)=="tr")
+{
+location.href="https://iade.com/tr/"+hashaprm;
+}
+else
+{
+$.get('http://www.cloudflare.com/cdn-cgi/trace', function(data) {
+  // Convert key-value pairs to JSON
+  // https://stackoverflow.com/a/39284735/452587
+  data = data.trim().split('\n').reduce(function(obj, pair) {
+    pair = pair.split('=');
+    return obj[pair[0]] = pair[1], obj;
+  }, {});
+  var datax=JSON.parse(JSON.stringify(data)).loc;
+  //document.getElementById("123").innerHTML=datax+navigator.language;
+  var datax2 = datax.toLowerCase();
+  if (datax2=="tr") {$redir="yes";} 
+  if ($redir=="yes") {location.href="https://iade.com/"+datax2+"/"+hashaprm;}  
+});
+}
+}
+</script>
+
+
+<div style="text-align:center";>
+<h1>iade.com</h1>
+<p><a href="/tr/">Turkish</a></p>
+
+
+
+
+</div>
+</body>
+</html>
