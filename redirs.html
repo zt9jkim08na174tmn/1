@@ -41,7 +41,7 @@ location.href="https://iade.com/tr/"+hashaprm;
 }
 else
 {
-$.get('http://www.cloudflare.com/cdn-cgi/trace', function(data) {
+$.get('/cdn-cgi/trace', function(data) {
   // Convert key-value pairs to JSON
   // https://stackoverflow.com/a/39284735/452587
   data = data.trim().split('\n').reduce(function(obj, pair) {
