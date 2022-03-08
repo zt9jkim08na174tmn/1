@@ -347,7 +347,19 @@ h1,p,span,h5 {font-family: 'Poppins',sans-serif !important;}
                </div>
                
                <!---maindiv-->
-               <div class="owl-carousel owl-theme">
+               <div class="owl-carousel owl-theme" id="demo">
+		       
+<script>
+let text = "";
+const fruits = ["Surfshark;20", "Hostinger;30", "Udemy;40"];
+fruits.forEach(myFunction);
+
+document.getElementById("demo").innerHTML = text;
+ 
+function myFunction(item, index) {
+  text += '<div class="col-md-6"><div class="card text-center cm1"><img class="card-img-top" style="padding: 1rem;" src="/img-tr/'+item.split(";")[0].toLowerCase()+'.jpg" alt="Card image cap"><div class="card-body"><h5 class="card-title">'+item.split(";")[0]+'</h5><p class="card-text">%'+item.split(";")[1]+' İade</p><a href="#" class="btn btn-primary">Siteye Git</a></div></div></div>'; 
+}
+</script>
                    
                   <div class="col-md-6">
                      <div class="card text-center cm1">
