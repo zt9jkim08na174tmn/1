@@ -370,26 +370,7 @@ function myFunction(item, index) {
       </div>
       <div class="modal-body">
           <div id="neyaz" style="text-align:center"></div>  
-       <!--  <form>
-          
-          <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Telefon Numarası</label>
-            <input type="text" class="form-control">
-          </div>
-          <div class="mb-3">
-            <label for="exampleInputPassword1" class="form-label">Şifre</label>
-            <input type="password" class="form-control" id="exampleInputPassword1">
-          </div>
-          <div class="mb-3 form-check">
-            <!--<input type="checkbox" class="form-check-input" id="exampleCheck1">
-            <label class="form-check-label" for="exampleCheck1">Beni Hatırla</label>
-            <p style="text-align:right;color:blue"><a data-bs-dismiss="modal" aria-label="Close" onclick="$('#iadeLogin').modal('show')">Zaten Üyeyim. Giriş Yap &raquo;</a></p>
-          </div>
-          <button type="submit" style="width:100%;font-size:20px" class="btn btn-primary">Ücretsiz Üye Ol</button><p style="text-align:center;font-weight:bold;margin-top:15px">YA DA</p>
-                   <button type="button" onclick='location.href=document.getElementById("togo").innerHTML' style="width:100%;font-size:16px" class="btn btn-primary2" style="background-color:#4CAF50">Para İadesi İstemiyorum<br>Üye Olmadan Devam Et</button>
-
-                    <button type="button" aria-label="Close" onclick='$('#iadeRegister').modal('show');reply_click(this.id);' style="width:100%;font-size:16px" class="btn btn-primary2" style="background-color:#4CAF50">Para İadesi İstemiyorum, Üye Olmadan Devam Et</button>
--->
+       
             <p style="text-align:center;color:blue"><a style="text-decoration: none;" href="" data-bs-dismiss="modal" aria-label="Close" onclick="$('#iadeLogin').modal('show')">Siteye Git &raquo;</a></p>
 
         </div>
@@ -555,17 +536,23 @@ textx += '<div class="slide-item"><div class="card text-center"><img class="card
       
       <div class="bg-iade3">
          <div class="container">
-            <div class="row">
-               <div class="col-md-8 offset-md-2">
+            <div class="row" id="demorow">
+               
+		    <div class="col-md-8 offset-md-2">
                   <a name="markalar"></a><div class="alert alert-primary text-center">TÜM MARKALAR<br>Dilediğiniz Markanın Üzerine Tıklayarak Alışverişe Gidebilirsiniz.</div>
                </div>
+		    
                <div class="col-md-2"></div>
-               <div class="col-4 col-lg-2">
-                  <div class="well">
-                     <img class="img-fluid" src="data:image/jpeg;base64,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">
-                     <br><span id="Agoda">%3 İade</span>
-                  </div>
-               </div>
+               
+	<script>
+let texty = "";
+fruits.forEach(myFunctiony);
+document.getElementById("demorow").innerHTML = texty;
+function myFunctiony(item, index) {
+texty += '<div class="col-4 col-lg-2"><div class="well"><span>'+item.split(";")[0]+'</span><br><span id="'+item.split(";")[0].toLowerCase()+'">%'+item.split(";")[1]+' İade</span></div></div>';
+}
+</script>	    
+		    
                
             </div>
          </div>
