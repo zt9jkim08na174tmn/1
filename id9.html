@@ -1551,13 +1551,21 @@ $("#examplet2").autocomplete({
 <!-- Modal -->
 
 <script>
-var uyeg="ok";
+nmcr = document.cookie.search("fnln=");
+nmcrs2 = document.cookie.search("fnln=05061001090");
+if (nmcr>-0.5 && nmcrs2<-0.5) {var fival = "Çıkış Yap"; var sival = "Üye Panelim &raquo;"; var uyeg="ok";} 
+if (nmcr>-0.5 && nmcrs2>-0.5) {var fival = "Üye Girişi"; var sival = "Hemen Üye Ol &raquo;";}
+if (nmcr<-0.5) {var fival = "Üye Girişi"; var sival = "Hemen Üye Ol &raquo;"; document.cookie = "fnln=05061001090; expires = Thu, 01 Jan 2030 00:00:00 GMT; path=/; domain=.iade.com";}
+if (nmcr==="undefined") {var fival = "Giriş / Çıkış"; var sival = "Hemen Üye Ol &raquo;";}
+	
+	
+
 if (uyeg=="ok")
 {
     
 function oklf(clickoto) {
-    $('#iadeinc').modal('show');
-    //location.href="https://www.iade.com/affiliates/tour.php?b="+clickoto;}    
+    //$('#iadeinc').modal('show');
+    location.href="https://www.iade.com/affiliates/tour.php?b="+clickoto;}    
 } 
 else 
 {
