@@ -481,14 +481,12 @@ function myFunction(item, index) {
  <div class="bg-iade pcNone">
      <h1 class="home-head" style="font-size:16px;text-align:center;margin-top:-10px">Tüm Alışverişinizden Para İadesi Kazanın!</h1>
  <div id="slick1">
-	<script>
+<script>
 let textx = "";
-fruits.sort().forEach(myFunctionx);
-document.getElementById("demo2").innerHTML = textx;
+fruits.forEach(myFunctionx);
+document.getElementById("slick1").innerHTML = textx;
 function myFunctionx(item, index) {
 textx += '<div class="slide-item"><div class="card text-center"><img class="card-img-top img-fluid" style="border-radius:10px;width:90px;align:center" src="/img-tr/'+item.split(";")[0]+'.jpg" alt="Card image cap"><div class="card-body"><p class="card-text">%'+item.split(";")[1]+' İade</p><a href="#" class="btn btn-primary">Siteye Git</a></div></div></div>';
-
-//textx += '<div class="col-4 col-lg-2"><div class="well" id="demo3"><span class="stroke">'+item.split(";")[0]+'</span><br><span>%'+item.split(";")[1]+' İade</span></div></div>';
 }
 </script>	
 		
