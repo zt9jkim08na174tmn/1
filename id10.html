@@ -866,7 +866,7 @@ $("#examplet2").autocomplete({
                     //setTimeout(function(){window.location = "http://www.SuccessUrl.com/";},1000);
                     //alert("evet");
                     $('#iadeRegister').modal('hide')
-                    $('#iadeLogin').modal('show');
+                    $('#iadeSucc').modal('show');
                     document.getElementById("myusern").value = document.getElementById("username").value;
                     document.getElementById("mypassw").value = document.getElementById("rpassword").value;
                     document.getElementById("aftersnp").innerHTML = "<p style='color:red'><b>iade.com'a Üye Olduğunuz İçin Teşekkür Ederiz.</b><br>Ödeme Alabilmeniz İçin Ad, Soyad, IBAN ve E-Posta Bilgileriniz Gereklidir.<br>Profilinizi Düzenlemek ve Alışverişe Başlamak İçin Giriş Yapınız.</p>";
@@ -919,6 +919,24 @@ $("#examplet2").autocomplete({
       <div class="modal-body">
                 <p class="modal-body">Adblock/Ublock Kullanıyorsunuz. Bu Durumda Alışverişinizi Kayıt Altına alamayız. Para İadesi Kazanabilmek İçin Reklam Engelleyicisini Kapatıp Sayfayı Yenileyin.</p>
 
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal -->
+
+<!-- Modal -->
+<div class="modal fade" id="iadeSucc" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Teşekkürler</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+<p class="modal-body">Üyeliğiniz Oluşturuldu ve Girişiniz Otomatik Olarak Yapıldı. Alışverişe Başlayabilirsiniz.</p>
+<button type="submit" value"Login" style="width:100%;font-size:20px" class="btn btn-primary" onclick="$('#iadeSucc').modal('hide')">Tamam</button>
         </div>
       </div>
     </div>
