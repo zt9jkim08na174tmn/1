@@ -948,6 +948,27 @@ $("#examplet2").autocomplete({
 <!-- Modal -->
 
 <script>
+	function getParameterByNames(name, url) {
+                                    if (!url) url = window.location.href;
+                                    name = name.replace(/[\[\]]/g, '\\$&');
+                                    var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+                                        results = regex.exec(url);
+                                    if (!results) return null;
+                                    if (!results[2]) return '';
+                                    return decodeURIComponent(results[2].replace(/\+/g, ' '));
+                                }
+
+var hashll = getParameterByNames("l");
+	if (hashll == "retry") {
+		$('#iadeLogin').modal('show');
+	document.getElementById("aftersnp").innerHTML = "<p style='color:red'><b>Tekrar Giriş Yapmayı Deneyiniz!</p>";
+	}
+</script>
+	
+	
+
+
+<script>
 nmcr = document.cookie.search("fnln=");
 nmcrs2 = document.cookie.search("fnln=05061001090");
 if (nmcr>-0.5 && nmcrs2<-0.5) {var fival = "Çıkış Yap"; var sival = "Üye Panelim &raquo;"; var uyeg="ok";} 
