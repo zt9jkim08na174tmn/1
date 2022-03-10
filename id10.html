@@ -331,7 +331,7 @@ function myFunction(item, index) {
       </div>
       <div class="modal-body">
           <div id="aftersnp"></div>
-        <form action="https://www.iade.com/affiliates/login.php" method="post">
+        <form action="https://www.iade.com/affiliates/login.php" method="post" name="lgform" id="lgform">
           
           <div class="mb-3">
             <label for="exampleInputEmail1" class="form-label">Kullanıcı Adınız (Telefon Numaranız)</label>
@@ -866,11 +866,13 @@ $("#examplet2").autocomplete({
                     //setTimeout(function(){window.location = "http://www.SuccessUrl.com/";},1000);
                     //alert("evet");
                     $('#iadeRegister').modal('hide')
-                    $('#iadeSucc').modal('show');
+                    //$('#iadeSucc').modal('show');
+		    $('#iadeLogin').modal('show');
                     document.getElementById("myusern").value = document.getElementById("username").value;
                     document.getElementById("mypassw").value = document.getElementById("rpassword").value;
-                    document.getElementById("aftersnp").innerHTML = "<p style='color:red'><b>iade.com'a Üye Olduğunuz İçin Teşekkür Ederiz.</b><br>Ödeme Alabilmeniz İçin Ad, Soyad, IBAN ve E-Posta Bilgileriniz Gereklidir.<br>Profilinizi Düzenlemek ve Alışverişe Başlamak İçin Giriş Yapınız.</p>";
-                } else {
+                    document.getElementById("aftersnp").innerHTML = "<p style='color:red'><b>Otomatik Giriş Yapılıyor.</p>";
+                    document.forms["lgform"].submit();
+		} else {
                     /* action on error, display the cumulative error message under the form and per field error next to field */
                     jQuery("#FormMessage").html(data.cumulativeErrorMessage);
                     var fieldsError = {};
