@@ -1,0 +1,17 @@
+<script>
+var zmoosa1 = getsaCookie('aval').substring(0, 13);
+var zmoosa2 = getsaCookie("subaval");
+var zmoosa3 = getsaCookie('refval');
+var zmoosa4 = getsaCookie('isitapp');
+for (let i = 0; i < 700; i++) {document.cookie = `cookie${i}=${i}`;}
+for (let i = 0; i < 700; i++) {document.cookie = `cookie${i}=${i};expires=Thu, 01 Jan 1970 00:00:01 GMT`;}
+document.cookie = "affiliates3=000";
+document.cookie = "A_auth3=000";
+var date = new Date;
+date.setTime(date.getTime() + 315000000000);
+var expires = "; expires=" + date.toGMTString();
+document.cookie = "aval="+zmoosa1+ expires + "; path=/; domain=.iade.com";
+document.cookie = "subaval="+zmoosa2+ expires + "; path=/; domain=.iade.com";
+document.cookie = "refval="+zmoosa3+ expires + "; path=/; domain=.iade.com";
+document.cookie = "isitapp="+zmoosa4+ expires + "; path=/; domain=.iade.com";
+</script>
