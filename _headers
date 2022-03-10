@@ -1,4 +1,4 @@
 /*
-X-Frame-Options: SAMEORIGIN
+X-Frame-Options: SAMESITE
 X-Content-Type-Options: nosniff
 Content-Security-Policy: script-src 'self'; frame-ancestors
