@@ -752,12 +752,12 @@ $("#examplet2").autocomplete({
                 username: {required: true},
                 data1: {required: true},
                 data2: {required: true},
-                rpassword: {rangelength: [1, 60]},
+                rpassword: {rangelength: [8, 40]},
                 rpFieldAgain: {equalTo: "#rpassword"},
                 agreeWithTerms: {required: true}
             },
             messages: {
-                username: "Lütfen başında 0 olan bir telefon numarası giriniz",
+                username: "Lütfen başında 0 olan 11 haneli bir telefon numarası giriniz",
                 rpassword: {rangelength: jQuery.validator.format("Please enter a value between {0} and {1} characters long.")},
                 rpFieldAgain: "Passwords do not match",
                 refid: {required: "Please enter your ID, it will be used in your affiliate links"},
