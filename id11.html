@@ -743,8 +743,7 @@ $("#examplet2").autocomplete({
             return this.optional(element) || /^[a-z0-9_-]+$/i.test(value);
         }, " Referral ID can only contain letters, numbers, underscores and hyphens.");
         var validator = signupForm.validate({
-            rules: {
-		lang: 'en';    
+            rules: {   
                 refid: {referralIDconstrain: true},
                 notificationemail: {required: true, email: true},
                 name: {required: true},
@@ -759,11 +758,11 @@ $("#examplet2").autocomplete({
             },
             messages: {
                 username: "Başında 0 olan 11 haneli bir telefon numarası giriniz!",
-                rpassword: {rangelength: jQuery.validator.format("Şifreniz en az 8 karakter olmalıdır!")},
+                rpassword: {rangelength: jQuery.validator.format("Şifreniz en az 8 karakter olmalıdır!"), required: "Bu alan gereklidir!"},
                 rpFieldAgain: "Passwords do not match",
                 refid: {required: "Please enter your ID, it will be used in your affiliate links"},
-                agreeWithTerms: "You must accept the terms and conditions",
-		required: "Bu alan gereklidir!"    
+                agreeWithTerms: "You must accept the terms and conditions"
+		   
             },
             submitHandler: function(form, event) {
                 event.preventDefault();submitToPAP(signupForm, validator);
