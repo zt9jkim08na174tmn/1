@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Arrays</h2>
+
+<p>Multiply every element in the array with 10:</p>
+
+<p id="demo"></p>
+
+<script>
+const numbers = ["trendyol123", "gd125", "asa12", "daba4"];
+const newArr = numbers.map(myFunction);
+function myFunction(num) {
+let result = num.includes("trendyol");
+if (result == true) {var fnumv = num;
+document.getElementById("demo").innerHTML = fnumv;
+}}
+
+</script>
+
+
+<a onclick='alert(document.getElementById("demo").innerHTML);'>abc</a>
+
+
+</body>
+</html>
