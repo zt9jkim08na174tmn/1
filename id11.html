@@ -757,11 +757,12 @@ $("#examplet2").autocomplete({
                 agreeWithTerms: {required: true}
             },
             messages: {
-                username: "Lütfen başında 0 olan 11 haneli bir telefon numarası giriniz",
+                username: "Başında 0 olan 11 haneli bir telefon numarası giriniz!",
                 rpassword: {rangelength: jQuery.validator.format("Şifreniz en az 8 karakter olmalıdır!")},
                 rpFieldAgain: "Passwords do not match",
                 refid: {required: "Please enter your ID, it will be used in your affiliate links"},
-                agreeWithTerms: "You must accept the terms and conditions"
+                agreeWithTerms: "You must accept the terms and conditions",
+		required: "Bu alan gereklidir!"    
             },
             submitHandler: function(form, event) {
                 event.preventDefault();submitToPAP(signupForm, validator);
