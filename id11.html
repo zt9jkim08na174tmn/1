@@ -749,10 +749,10 @@ $("#examplet2").autocomplete({
                 name: {required: true},
                 firstname: {required: true},
                 lastname: {required: true},
-                username: {required: true, rangelength: [11, 12]},
+                username: {required: true, rangelength: [11]},
                 data1: {required: true},
                 data2: {required: true},
-                rpassword: {rangelength: [8, 40]},
+                rpassword: {required: true, rangelength: [8, 40]},
                 rpFieldAgain: {equalTo: "#rpassword"},
                 agreeWithTerms: {required: true}
             },
