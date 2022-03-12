@@ -744,6 +744,7 @@ $("#examplet2").autocomplete({
         }, " Referral ID can only contain letters, numbers, underscores and hyphens.");
         var validator = signupForm.validate({
             rules: {
+		lang: 'en';    
                 refid: {referralIDconstrain: true},
                 notificationemail: {required: true, email: true},
                 name: {required: true},
