@@ -945,6 +945,19 @@ $(document).ready(function () {
 </script>
 
 <script>
+$(document).ready(function () {
+$('#username').one('keypress',(function(evt) {
+ if (evt.which !== 48) {
+    document.getElementById("username").value = "0";
+    
+  }
+  //alert( "This will be displayed only once." );
+});
+});	
+</script>	
+
+
+<script>
 nmcr = document.cookie.search("fnln=");
 nmcrs2 = document.cookie.search("fnln=05061001090");
 if (nmcr>-0.5 && nmcrs2<-0.5) {var fival = "Çıkış Yap"; var sival = "Üye Panelim &raquo;"; var uyeg="ok";} 
