@@ -741,7 +741,7 @@ $("#examplet2").autocomplete({
         }, " Referral ID can only contain letters, numbers, underscores and hyphens.");
 	jQuery.validator.addMethod("trphonecheck", function(value, element) {
             return this.optional(element) || /^05/i.test(value);
-        }, " Lütfen geçerli bir telefon numarası giriniz.");    
+        }, " Geçerli bir telefon numarası giriniz!");    
 	    
         var validator = signupForm.validate({
             rules: {   
@@ -758,7 +758,7 @@ $("#examplet2").autocomplete({
                 agreeWithTerms: {required: true}
             },
             messages: {
-                username: "Başında 0 olan 11 haneli bir telefon numarası giriniz!",
+                username: "05 ile başlayan 11 haneli bir telefon numarası giriniz!",
                 rpassword: {rangelength: jQuery.validator.format("Şifreniz en az 8 karakter olmalıdır!"), required: "Bu alan gereklidir!"},
                 rpFieldAgain: "Passwords do not match",
                 refid: {required: "Please enter your ID, it will be used in your affiliate links"},
