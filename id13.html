@@ -739,6 +739,10 @@ $("#examplet2").autocomplete({
         jQuery.validator.addMethod("referralIDconstrain", function(value, element) {
             return this.optional(element) || /^[a-z0-9_-]+$/i.test(value);
         }, " Referral ID can only contain letters, numbers, underscores and hyphens.");
+	jQuery.validator.addMethod("trphonecheck", function(value, element) {
+            return this.optional(element) || /^05/i.test(value);
+        }, " Lütfen geçerli bir telefon numarası giriniz.");    
+	    
         var validator = signupForm.validate({
             rules: {   
                 refid: {referralIDconstrain: true},
@@ -746,7 +750,7 @@ $("#examplet2").autocomplete({
                 name: {required: true},
                 firstname: {required: true},
                 lastname: {required: true},
-                username: {required: true, rangelength: [11, 11]},
+                username: {required: true, rangelength: [11, 11], trphonecheck: true},
                 data1: {required: true},
                 data2: {required: true},
                 rpassword: {required: true, rangelength: [8, 40]},
