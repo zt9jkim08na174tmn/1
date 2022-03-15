@@ -921,6 +921,7 @@ $("#examplet2").autocomplete({
 	-webkit-animation-iteration-count:infinite;
 	-webkit-animation-timing-function:ease-in-out;
 	-webkit-animation-direction: alternate;
+	color: red;
 }	
 </style>	
 
@@ -951,8 +952,8 @@ $(document).ready(function () {
 	
 $("#username").keyup(function () {	
 if (username.value.length == username.maxLength) {
-      //$("#username").next('#rpassword').focus();
-      $("#username").parent().next().find('input').focus();
+      $("#username").parent().next('#rpassword').focus();
+      //$("#username").parent().next().find('input').focus();
     }
 });	
 	
