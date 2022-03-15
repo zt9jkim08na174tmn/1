@@ -335,7 +335,7 @@ function myFunction(item, index) {
           </div>
           
           <div class="clear"></div>
-    <div id="FormMessage" class=""></div>
+    <div id="FormMessage" class="" style="display:none;"></div>
           
           <button type="submit" style="width:100%;font-size:20px" class="btn btn-primary">Ücretsiz Üye Ol</button><p style="text-align:center;font-weight:bold;margin-top:15px">YA DA</p>
                    <button type="button" onclick='location.href=document.getElementById("togo").innerHTML' style="width:100%;font-size:16px" class="btn btn-primary2" style="background-color:#4CAF50">İade İstemiyorum, Üye Olmadan Devam Et</button>
@@ -952,8 +952,8 @@ $(document).ready(function () {
 	
 $("#username").keyup(function () {	
 if (username.value.length == username.maxLength) {
-      $("#username").parent().next('#rpassword').focus();
-      //$("#username").parent().next().find('input').focus();
+      //$("#username").next('#rpassword').focus();
+      $("#username").parent().next().find('input').focus();
     }
 });	
 	
