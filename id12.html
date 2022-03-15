@@ -313,12 +313,12 @@ function myFunction(item, index) {
           
           <div class="mb-3">
             <label for="exampleInputName1" class="form-label">Telefon Numaranız (Örn: 05061001090)</label>
-            <input type="text" id="username" name="username" class="form-control" maxlength="11">
+            <input type="text" id="username" name="username" class="form-control uinputs" maxlength="11">
           </div>
           
           <div class="mb-3">
             <label for="exampleInputPassword1" class="form-label">Şifre Belirleyiniz (En Az 8 Karakter)</label>
-            <input type="password" id="rpassword" name="rpassword" class="form-control" oldid="exampleInputPassword1">
+            <input type="password" id="rpassword" name="rpassword" class="form-control uinputs" oldid="exampleInputPassword1">
           </div>
           
           <div class="mb-3 form-check">
@@ -956,9 +956,9 @@ document.getElementById("username").value = "0";
 
 <script>
 $(document).ready(function () {	
-$("#username").keyup(function () {
+$(".uinputs").keyup(function () {
     if (this.value.length == this.maxLength) {
-      $(this).next('.inputs').focus();
+      $(this).next('.uinputs').focus();
     }
 });	
 });	
