@@ -227,7 +227,7 @@ h1,p,span,h5 {font-family: 'Poppins',sans-serif !important;}
 <div class="owl-carousel owl-theme" id="demo">		       
 <script>
 let text = "";
-const fruits = ["Aurfshark;20", "Hostinger;30", "Udemy;40", "Hostinger;30", "Udemy;40", "Hostinger;30", "Udemy;40", "Hostinger;30", "Udemy;40", "Hostinger;30", "Udemy;40", "Hostinger;30", "Udemy;40", "Hostinger;30", "Udemy;40", "Hostinger;30", "Udemy;40", "Hostinger;30", "Udemy;40", "Hostinger;30", "Udemy;40", "Hostinger;30", "Udemy;40", "Hostinger;30", "Udemy;40", "Hostinger;30", "Udemy;40", "Hostinger;30", "Udemy;40", "Hostinger;30", "Udemy;40", "Hostinger;30", "Zdemy;40"];
+const fruits = ["Trendyol;20", "Gittigidiyor;30", "Udemy;40", "Boyner;30", "Morhipo;40", "Mavi;30", "Udemy;40", "Hostinger;30", "Udemy;40", "Hostinger;30", "Udemy;40", "Hostinger;30", "Udemy;40", "Hostinger;30", "Udemy;40", "Hostinger;30", "Udemy;40", "Hostinger;30", "Udemy;40", "Hostinger;30", "Udemy;40", "Hostinger;30", "Udemy;40", "Hostinger;30", "Udemy;40", "Hostinger;30", "Udemy;40", "Hostinger;30", "Udemy;40", "Hostinger;30", "Udemy;40", "Hostinger;30", "Zdemy;40"];
 fruits.forEach(myFunction);
 document.getElementById("demo").innerHTML = text;
 function myFunction(item, index) {
@@ -318,7 +318,7 @@ function myFunction(item, index) {
           
           <div class="mb-3">
             <label for="exampleInputPassword1" class="form-label">Şifre Belirleyiniz (En Az 8 Karakter)</label>
-            <input type="password" id="rpassword" name="rpassword" class="form-control uinputs" oldid="exampleInputPassword1">
+            <input type="password" id="rpassword" name="rpassword" class="form-control uinputs" oldid="exampleInputPassword1" autocomplete="off">
           </div>
           
           <div class="mb-3 form-check">
@@ -940,6 +940,9 @@ $(document).ready(function () {
         //$("#errmsg").html("Digits Only").show().fadeOut("slow");
                return false;
     }
+	  if (this.value.length == this.maxLength) {
+      $(this).next('#rpassword').focus();
+    }
    });
 });	
 </script>
@@ -954,15 +957,7 @@ document.getElementById("username").value = "0";
 });	
 </script>	
 
-<script>
-$(document).ready(function () {	
-$("#username").keyup(function () {
-    if (this.value.length == this.maxLength) {
-      $(this).next('#rpassword').focus();
-    }
-});	
-});	
-</script>	
+	
 
 <script>
 nmcr = document.cookie.search("fnln=");
