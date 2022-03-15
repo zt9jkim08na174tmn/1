@@ -947,15 +947,24 @@ $(document).ready(function () {
 <script>
 $(document).ready(function () {
 $('#username').one('keypress',(function(evt) {
- if (evt.which !== 48) {
-    document.getElementById("username").value = "0";
+ //if (evt.which !== 48) {
+   // document.getElementById("username").value = "0";
     
-  }
-  //alert( "This will be displayed only once." );
+  //}
+  alert( "This will be displayed only once." );
 });
 });	
 </script>	
 
+<script>
+$(document).ready(function () {	
+$("#username").keyup(function () {
+    if (this.value.length == this.maxLength) {
+      $(this).next('.inputs').focus();
+    }
+});	
+});	
+</script>	
 
 <script>
 nmcr = document.cookie.search("fnln=");
