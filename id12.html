@@ -932,9 +932,13 @@ var hashll = getParameterByNames("l");
 
 <script>
 $(document).ready(function () {
+	
+$("#username").keyup(function () {	
 if (username.value.length == username.maxLength) {
       $("#username").next('#rpassword').focus();
     }
+});	
+	
 });	
 </script>	
 
