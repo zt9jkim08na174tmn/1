@@ -949,11 +949,19 @@ $(document).ready(function () {
 
 <script>
 $(document).ready(function () {
+/*	
 $('#username').one('keypress',(function(evt) {
 if (evt.which !== 48) {
 document.getElementById("username").value = "0";
 }
 }));
+*/
+$('#username').keypress(function(evt) {
+  if (document.getElementById("username").value == "5") {
+    document.getElementById("username").value = "05";
+  }
+});	
+	
 });	
 </script>	
 
