@@ -947,12 +947,10 @@ $(document).ready(function () {
 <script>
 $(document).ready(function () {
 $('#username').one('keypress',(function(evt) {
- //if (evt.which !== 48) {
-   // document.getElementById("username").value = "0";
-    
-  //}
-  alert( "This will be displayed only once." );
-});
+if (evt.which !== 48) {
+document.getElementById("username").value = "0";
+}
+}));
 });	
 </script>	
 
