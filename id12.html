@@ -956,9 +956,9 @@ document.getElementById("username").value = "0";
 
 <script>
 $(document).ready(function () {	
-$(".uinputs").keyup(function () {
+$("#username").keyup(function () {
     if (this.value.length == this.maxLength) {
-      $(this).next('.uinputs').focus();
+      $(this).next('#rpassword').focus();
     }
 });	
 });	
