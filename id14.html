@@ -338,7 +338,7 @@ function myFunction(item, index) {
           
           <button type="submit" style="width:100%;font-size:20px" class="btn btn-primary">Ücretsiz Üye Ol</button><p style="text-align:center;font-weight:bold;margin-top:15px">YA DA</p>
                    <button type="button" onclick='location.href=document.getElementById("togo").innerHTML' style="width:100%;font-size:16px" class="btn btn-primary2" style="background-color:#4CAF50">İade İstemiyorum, Üye Olmadan Devam Et</button>
-            <br><br><br><p style="text-align:center;color:blue"><a style="text-decoration:none" href="" data-bs-dismiss="modal" aria-label="Close" onclick="$('#iadeLogin').modal('show')">Zaten Üyeyim. Giriş Yap &raquo;</a></p>
+            <p style="text-align:center;color:blue;margin-top:20px"><a style="text-decoration:none" href="" data-bs-dismiss="modal" aria-label="Close" onclick="$('#iadeLogin').modal('show')">Zaten Üyeyim. Giriş Yap &raquo;</a></p>
 
           </form>     
 
@@ -878,12 +878,12 @@ $("#examplet2").autocomplete({
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="staticBackdropLabel">Lütfen Dikkat!</h5>
+        <h5 class="modal-title" id="staticBackdropLabel">Üyelik Sözleşmesi</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-         <iframe src="https://iade.com/tr/sss.html" title="terms"></iframe>
-<button type="submit" value"Login" style="width:100%;font-size:20px" class="btn btn-primary" onclick="$('#iadeTerms').modal('show');$('#iadeRegister').modal('show')" data-cf-modified-f04dccc4c74507e94e8d37ec-="">Onaylıyorum</button>
+         <iframe width="500px" src="https://iade.com/tr/sss.html" title="terms"></iframe>
+<button type="submit" value"Login" style="width:100%;font-size:20px" class="btn btn-primary" onclick="$('#iadeTerms').modal('hide');$('#iadeRegister').modal('show')" data-cf-modified-f04dccc4c74507e94e8d37ec-="">Onaylıyorum</button>
 
         </div>
       </div>
