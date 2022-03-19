@@ -69,10 +69,11 @@ $(z2giris).on('click', function() {
 	  </script>
 	  
 	  <script>
-document.getElementById("zgiris").addEventListener("click", displayDate);
-		  setTimeout(function displayDate() {
+document.getElementById("zgiris").addEventListener("click", setTimeout(displayDate, 1000));
+		  function displayDate() {
   document.getElementById('ugiris').click();
-},3000);
+}
+  
 </script>
 	  </script>		  
 	  
