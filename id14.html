@@ -532,8 +532,8 @@ texty += '<div class="col-4 col-lg-2"><div class="well"><span>'+item.split(";")[
                <div class="col-md-6 text-center text-light">
                   <strong>iade.com</strong> © <span id="copyright"><script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))</script></span>
                   <ul>
-                     <li><a href="#" onclick="$('#iadeTerms').modal('show')">Kullanım Şartları</a></li>
-                     <li><a href="#" onclick="$('#iadeTerms').modal('show')">Gizlilik Politikası</a></li>
+                     <li><a onclick="$('#iadeTerms1').modal('show')">Kullanım Şartları</a></li>
+                     <li><a onclick="$('#iadeTerms2').modal('show')">Gizlilik Politikası</a></li>
                      <li><a href="https://api.whatsapp.com/send/?phone=905061001090&text&app_absent=0" target="_blank">Bizimle İletişime Geçin</a></li>
                      
                   </ul>
@@ -902,6 +902,44 @@ $("#examplet2").autocomplete({
       <div class="modal-body">
          <iframe width="100%" height="400px" src="https://iade.com/tr/sss.html" title="terms"></iframe>
 <button type="submit" value"Login" style="width:100%;font-size:20px" class="btn btn-primary" onclick="$('#iadeTerms').modal('hide');$('#iadeRegister').modal('show')">Kapat</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal -->
+
+<!-- Modal -->
+<div class="modal fade" id="iadeTerms1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true"
+     stye="overflow-y:scroll !important;">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Üyelik Sözleşmesi</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+         <iframe width="100%" height="400px" src="https://iade.com/tr/sss.html#sartlar" title="terms"></iframe>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal -->
+
+<!-- Modal -->
+<div class="modal fade" id="iadeTerms2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true"
+     stye="overflow-y:scroll !important;">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Üyelik Sözleşmesi</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+         <iframe width="100%" height="400px" src="https://iade.com/tr/sss.html#gizlilik" title="terms"></iframe>
 
         </div>
       </div>
