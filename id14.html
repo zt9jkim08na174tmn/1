@@ -61,6 +61,11 @@
         $('#iadeRegister').modal('hide');
 	setTimeout(function(){$('#iadeLogin').modal('show');}, 500);
     });	
+	$(zterms).on('click', function() {
+        $('#iadeRegister').modal('hide');
+	setTimeout(function(){$('#iadeTerms').modal('show');}, 500);
+    });	
+	
 $(z2giris).on('click', function() {
         
 	document.getElementById('ugiris').click();  
@@ -363,7 +368,7 @@ function myFunction(item, index) {
               <input type="hidden" id="notificationemail" name="notificationemail" value="lutfendegistirin@iade.com">
               <input type="hidden" id="data2" name="data2" value=" ">
               <input type="checkbox" class="form-check-input" id="exampleCheck1" name="rememberMe" checked>
-	      <label class="form-check-label" for="exampleCheck1"><span style="color:blue" onclick="$('#iadeTerms').modal('show');$('#iadeRegister').modal('hide')">Üyelik Sözleşmesi</span>'ni Kabul Ediyorum.</label>
+	      <label class="form-check-label" for="exampleCheck1"><span id="zterms" style="color:blue">Üyelik Sözleşmesi</span>'ni Kabul Ediyorum.</label>
           </div>
          
           <div class="clear"></div>
@@ -893,7 +898,7 @@ $("#examplet2").autocomplete({
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="staticBackdropLabel">Biz Kimiz?</h5>
+        <h5 class="modal-title" id="staticBackdropLabel">Premium Üyelik</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
@@ -906,7 +911,7 @@ $("#examplet2").autocomplete({
 <!-- Modal -->
 
 <!-- Modal -->
-<div class="modal fade" id="iadepremium" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+<div class="modal fade" id="iadeadbl" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
