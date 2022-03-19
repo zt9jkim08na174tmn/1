@@ -58,9 +58,14 @@
     });
 	
    $(zgiris).on('click', function() {
-        $('#iadeRegister').modal('toggle');
-	document.getElementById('ugiris').click();  
+        $('#iadeRegister').modal('hide');
+	
     });	
+$(z2giris).on('click', function() {
+        
+	document.getElementById('ugiris').click();  
+    });		
+	
 	  </script>
 <script>
 $("#close1_open2").on('click', function() {
@@ -349,7 +354,7 @@ function myFunction(item, index) {
           <button type="submit" style="width:100%;font-size:20px" class="btn btn-primary">Ücretsiz Üye Ol</button><p style="text-align:center;font-weight:bold;margin-top:15px">YA DA</p>
                    <button type="button" onclick='location.href=document.getElementById("togo").innerHTML' style="width:100%;font-size:16px" class="btn btn-primary2" style="background-color:#4CAF50">İade İstemiyorum, Üye Olmadan Devam Et</button>
             <p style="text-align:center;color:blue;margin-top:30px"><a style="text-decoration:none" href="" data-bs-dismiss="modal" aria-label="Close" onclick="$('#iadeLogin').modal('show')">Zaten Üyeyim. Giriş Yap &raquo;</a></p>
-	     <button class="btn btn-success btn1" id="zgiris" type="submit" style="font-family: 'Roboto', sans-serif;font-weight:lighter">Üye Girişi</button>
+	     <button class="btn btn-success btn1" id="zgiris" type="submit" style="font-family: 'Roboto', sans-serif;font-weight:bold">Üye Girişi</button>
           </form>     
 
         </div>
