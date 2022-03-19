@@ -330,7 +330,7 @@ function myFunction(item, index) {
               <input type="hidden" id="notificationemail" name="notificationemail" value="lutfendegistirin@iade.com">
               <input type="hidden" id="data2" name="data2" value=" ">
               <input type="checkbox" class="form-check-input" id="exampleCheck1" name="rememberMe" checked>
-	      <label class="form-check-label" for="exampleCheck1"><span style="color:navy" onclick="$('#iadeRegister').modal('hide');$('#iadeLogin').modal('show')">Üye Sözleşmesi</span>'ni Kabul Ediyorum.</label>
+	      <label class="form-check-label" for="exampleCheck1"><span style="color:blue" onclick="$('#iadeRegister').modal('hide');$('#iadeTerms').modal('show')">Üye Sözleşmesi</span>'ni Kabul Ediyorum.</label>
           </div>
          
           <div class="clear"></div>
@@ -338,7 +338,7 @@ function myFunction(item, index) {
           
           <button type="submit" style="width:100%;font-size:20px" class="btn btn-primary">Ücretsiz Üye Ol</button><p style="text-align:center;font-weight:bold;margin-top:15px">YA DA</p>
                    <button type="button" onclick='location.href=document.getElementById("togo").innerHTML' style="width:100%;font-size:16px" class="btn btn-primary2" style="background-color:#4CAF50">İade İstemiyorum, Üye Olmadan Devam Et</button>
-            <br><br><p style="text-align:center;color:blue"><a style="text-decoration:none" href="" data-bs-dismiss="modal" aria-label="Close" onclick="$('#iadeLogin').modal('show')">Zaten Üyeyim. Giriş Yap &raquo;</a></p>
+            <br><br><br><p style="text-align:center;color:blue"><a style="text-decoration:none" href="" data-bs-dismiss="modal" aria-label="Close" onclick="$('#iadeLogin').modal('show')">Zaten Üyeyim. Giriş Yap &raquo;</a></p>
 
           </form>     
 
@@ -865,6 +865,24 @@ $("#examplet2").autocomplete({
       </div>
       <div class="modal-body">
                 <p class="modal-body">Adblock/Ublock Kullanıyorsunuz. Bu Durumda Alışverişinizi Kayıt Altına alamayız. Para İadesi Kazanabilmek İçin Reklam Engelleyicisini Kapatıp Sayfayı Yenileyin.</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal -->
+
+<!-- Modal -->
+<div class="modal fade" id="iadeTerms" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Lütfen Dikkat!</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+         <iframe src="https://iade.com/tr/sss.html" title="terms"></iframe>
 
         </div>
       </div>
