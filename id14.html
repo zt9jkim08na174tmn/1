@@ -59,7 +59,7 @@
 	
    $(zgiris).on('click', function() {
         $('#iadeRegister').modal('hide');
-	
+	setTimeout(function(){$('#iadeLogin').modal('show');}, 300);
     });	
 $(z2giris).on('click', function() {
         
@@ -73,10 +73,11 @@ $(z2giris).on('click', function() {
 //		  function displayDate() {
 //  document.getElementById('ugiris').click();
 //}
-document.getElementById("zgiris").addEventListener("click", displayDate);
-		  function displayDate() {
+		  
+//document.getElementById("zgiris").addEventListener("click", displayDate);
+		  //function displayDate() {
   //setTimeout(function(){document.getElementById('ugiris').click();}, 300);
-  setTimeout(function(){$('#iadeLogin').modal('show');}, 300);
+  //setTimeout(function(){$('#iadeLogin').modal('show');}, 300);
 			  
 			  
 }		  
