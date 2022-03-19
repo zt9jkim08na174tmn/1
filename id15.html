@@ -39,7 +39,8 @@
             </li>
           </ul>
           <div class="d-flex">
-             <button class="btn btn-success btn3" id="ukazanc" type="submit" style="font-family: 'Roboto', sans-serif;font-weight:lighter">Kazançlarım</button>
+            <button class="btn btn-success btn3" id="uprofil" type="submit" style="font-family: 'Roboto', sans-serif;font-weight:lighter">Profilim</button>
+            <button class="btn btn-success btn3" id="ukazanc" type="submit" style="font-family: 'Roboto', sans-serif;font-weight:lighter">Kazançlarım</button>		  
             <button class="btn btn-success btn1" id="ugiris" type="submit" style="font-family: 'Roboto', sans-serif;font-weight:lighter">Üye Girişi</button>
             <button class="btn btn-success btn2" id="ukayit" type="submit" style="font-family: 'Roboto', sans-serif;font-weight:lighter">Ücretsiz Üye Ol</button>
           </div>
@@ -61,6 +62,10 @@
   $(ukazanc).on('click', function() {
         $('#iadeearnings').modal('show');
     });
+	
+$(uprofil).on('click', function() {
+        $('#iadeprofil').modal('show');
+    });	
 	
    $(zgiris).on('click', function() {
         $('#iadeRegister').modal('hide');
@@ -944,6 +949,25 @@ $("#examplet2").autocomplete({
       </div>
       <div class="modal-body">
          <iframe width="100%" height="400px" src="https://www.iade.com/affiliates/panel.php#Transactions-List" title="earnings"></iframe>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal -->
+
+<!-- Modal -->
+<div class="modal fade" id="iadeprofil" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true"
+     stye="overflow-y:scroll !important;">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Kazançlarım</h5>
+	      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+         <iframe width="100%" height="400px" src="https://www.iade.com/affiliates/panel.php#PersonalDetails" title="profile"></iframe>
 
         </div>
       </div>
