@@ -85,12 +85,7 @@ $(z2giris).on('click', function() {
 </script>
 	  </script>		  
 	  
-<script>
-$("#close1_open2").on('click', function() {
-    $("#modal1").modal('hide');
-    $("#modal2").modal('show');
-});	
-</script>	  
+	  
 
 <style>
 .btn-primary2 {background-color:red;color:white;}
@@ -371,7 +366,7 @@ function myFunction(item, index) {
           
           <button type="submit" style="width:100%;font-size:20px" class="btn btn-primary">Ücretsiz Üye Ol</button><p style="text-align:center;font-weight:bold;margin-top:15px">YA DA</p>
                    <button type="button" onclick='location.href=document.getElementById("togo").innerHTML' style="width:100%;font-size:16px" class="btn btn-primary2" style="background-color:#4CAF50">İade İstemiyorum, Üye Olmadan Devam Et</button>
-            <p id="zgiris" style="text-align:center;color:blue;margin-top:30px"><a style="text-decoration:none">Zaten Üyeyim. Giriş Yap &raquo;</a></p>
+            <p id="zgiris" style="text-align:center;color:blue;margin-top:30px"><a href="" style="text-decoration:none">Zaten Üyeyim. Giriş Yap &raquo;</a></p>
 	     
           </form>     
 
@@ -1018,30 +1013,7 @@ $("#examplet2").autocomplete({
 
 	
 
-<button class="btn btn-primary" data-toggle="modal" data-target="#modal1">modal 1</button>
 
-<div id="modal1" class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-sm">
-    <div class="modal-content">
-        <div class="modal-body">
-            <p>this is modal no. 1</p>
-            <button id="close1_open2" type="button" class="btn btn-primary">close & open modal 2</button>
-        </div>
-    </div>
-  </div>
-</div>
-
-<button class="btn btn-primary" data-toggle="modal" data-target="#modal2">modal 2</button>
-
-<div id="modal2" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-sm">
-    <div class="modal-content">
-        <div class="modal-body">
-            <p>this is modal no. 2</p>
-        </div>
-    </div>
-  </div>
-</div>
 
 
 <style>
