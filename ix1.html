@@ -1193,7 +1193,11 @@ if (nmcr>-0.5 && nmcrs2>-0.5) {var fival = "Üye Girişi"; var sival = "Hemen Ü
 if (nmcr<-0.5) {var fival = "Üye Girişi"; var sival = "Hemen Üye Ol &raquo;"; document.cookie = "fnln=05061001090; expires = Thu, 01 Jan 2030 00:00:00 GMT; path=/; domain=.iade.com";}
 if (nmcr==="undefined") {var fival = "Giriş / Çıkış"; var sival = "Hemen Üye Ol &raquo;";}
 	
-	
+function reply_click(clicked_id)
+{
+document.getElementById("staticBackdropLabelgoto").innerHTML = "https://"+clicked_id+".com"
+}
+  	
 
 if (uyeg=="ok")
 {
@@ -1204,7 +1208,7 @@ function oklf(clickoto) {
 } 
 else 
 {
-document.getElementById("staticBackdropLabelgoto").innerHTML = this.id+" sitesine gidiyorsunuz...";	
+//document.getElementById("staticBackdropLabelgoto").innerHTML = this.id+" sitesine gidiyorsunuz...";	
 function oklf(clickoto) {$('#iadeinc').modal('show');reply_click(this.id);}     
 }
 </script> 
