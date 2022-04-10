@@ -1209,7 +1209,11 @@ function oklf(clickoto) {
 else 
 {
 //document.getElementById("staticBackdropLabelgoto").innerHTML = this.id+" sitesine gidiyorsunuz...";	
-function oklf(clickoto) {$('#iadeinc').modal('show');reply_click(this.id);}     
+function oklf(clickoto) {
+	$('#iadeinc').modal('show');
+	document.getElementById("staticBackdropLabelgoto").innerHTML = clickoto+" gidiyorsunuz!";
+	//reply_click(this.id);
+}     
 }
 </script> 
 <!--extra end -->      
