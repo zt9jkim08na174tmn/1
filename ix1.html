@@ -1038,7 +1038,7 @@ $("#examplet2").autocomplete({
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="staticBackdropLabel">Lütfen Dikkat!</h5>
+        <h5 class="modal-title" id="staticBackdropLabelgoto">Lütfen Dikkat!</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
@@ -1204,6 +1204,7 @@ function oklf(clickoto) {
 } 
 else 
 {
+document.getElementById("staticBackdropLabelgoto").innerHTML = this.id+" sitesine gidiyorsunuz...";	
 function oklf(clickoto) {$('#iadeinc').modal('show');reply_click(this.id);}     
 }
 </script> 
