@@ -1,0 +1,33 @@
+<script>
+const fruits = ["trendyol;20", "gittigidiyor;30", "udemy;40", "mavi;40"];
+  
+  
+function getParameterByNames(name, url) {
+                                    if (!url) url = window.location.href;
+                                    name = name.replace(/[\[\]]/g, '\\$&');
+                                    var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+                                        results = regex.exec(url);
+                                    if (!results) return null;
+                                    if (!results[2]) return '';
+                                    return decodeURIComponent(results[2].replace(/\+/g, ' '));
+                                }
+
+var hashlgo = getParameterByNames("brand");
+
+  
+const ages = ["trx32", "ptx33", "frx16", "grx40"];
+
+//document.getElementById("demo").innerHTML = ages.filter(checkAdult);
+
+function checkAdult(age) {
+  
+  return age.includes("gr");
+  
+}
+
+var fulltx=ages.filter(checkAdult);
+
+alert(fulltx);   
+  
+  
+</script>  
