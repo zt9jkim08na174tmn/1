@@ -1,6 +1,6 @@
 <script>
 
-const fruits = ["trendyol;20", "gittigidiyor;30", "udemy;40", "mavi;40"];
+const fruits = ["trendyol;20", "gittigidiyor;30", "udemy;4238", "mavi;40"];
   
   
 function getParameterByNames(name, url) {
@@ -24,6 +24,8 @@ function checkAdult(age) {
 
 var fulltx=fruits.filter(checkAdult); 
  
-alert(fulltx);  
+var offerid = fulltx.split(";")[1];
+  
+alert("https://tr.rdrtr.com/aff_c?offer_id="+offerid+"&aff_id=17618");  
   
 </script>  
