@@ -151,6 +151,7 @@ h1,p,span,h5 {font-family: 'Poppins',sans-serif !important;}
    font-size:14px; 
   }
   .immod {width:15px;}	
+  .imcls1 {width:30%;height:30%;}	
   
     .card-nasil-calisir-left-area {
         margin-top: 1.5rem;
@@ -1243,7 +1244,7 @@ else
 //document.getElementById("staticBackdropLabelgoto").innerHTML = this.id+" sitesine gidiyorsunuz...";	
 function oklf(clickoto) {
 	$('#iadeinc').modal('show');
-	document.getElementById("staticBackdropLabelgoto").innerHTML = "<img src='https://iade.com/imgs/"+clickoto.toLowerCase()+".jpg' width='50%' height='50%'>";
+	document.getElementById("staticBackdropLabelgoto").innerHTML = "<img src='https://iade.com/imgs/"+clickoto.toLowerCase()+".jpg' width='50%' height='50%' class='imcls1'>";
 	document.getElementById("gotobrand").innerHTML = clickoto+" Sitesine Devam Et &raquo;";
 	document.getElementById("gotobrand").setAttribute("name",clickoto);
 	//reply_click(this.id);
