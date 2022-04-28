@@ -50,7 +50,9 @@
     </nav>
    <script>
 	function hdfl2() {   
-	document.getElementById('mainp1').style.display = 'none';   
+	document.getElementById('mainp1').style.display = 'none'; 
+	document.getElementById("ifr").src="https://www.iade.com/affiliates/panel.php";	
+	document.getElementById('mainp2').style.display = 'block';	
 	}
 	  </script>	   
 	   
@@ -259,7 +261,10 @@ h1,p,span,h5 {font-family: 'Poppins',sans-serif !important;}
 <span id="togo" style="display:none;"></span>
        
    
-      
+<div style="display:none" id="mainp2">
+<iframe id='ifr' frameborder="0" scrolling="no" width="550" height="400">	
+</div>	 
+	 
       
       <div class="bg-iade animate__bounceInRight mobileNone" id="mainp1">
          <div class="container-fluid">
