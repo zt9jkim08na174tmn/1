@@ -38,8 +38,8 @@
               <a class="nav-link" href="https://api.whatsapp.com/send/?phone=905061001090&text&app_absent=0" target="_blank">İletişim</a>
             </li>
           </ul>
-          <div class="d-flex">
-            <button class="btn btn-success btn4" id="uprofil" type="submit" style="font-family: 'Roboto', sans-serif;font-weight:lighter">Profilim</button>
+          <div class="d-flex" id="dflex2">
+            <button class="btn btn-success btn4" onclick="hdfl2()" id="uprofil" type="submit" style="font-family: 'Roboto', sans-serif;font-weight:lighter">Profilim</button>
             <button class="btn btn-success btn4" id="ukazanc" type="submit" style="font-family: 'Roboto', sans-serif;font-weight:lighter">Kazançlarım</button>
             <button class="btn btn-success btn4" id="ulogout" type="submit" style="font-family: 'Roboto', sans-serif;font-weight:lighter">Çıkış</button>		  		  
             <button class="btn btn-success btn1" id="ugiris" type="submit" style="font-family: 'Roboto', sans-serif;font-weight:lighter">Üye Girişi</button>
@@ -48,7 +48,12 @@
         </div>
       </div>
     </nav>
-      
+   <script>
+	function hdfl2() {   
+	document.getElementById('dflex2').style.display = 'none';   
+	}
+	  </script>	   
+	   
       <script type="text/javascript" src="js/owl.carousel.min.js"></script>
       
 <script type="text/javascript">
