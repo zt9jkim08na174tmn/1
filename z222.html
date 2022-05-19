@@ -1249,28 +1249,20 @@ if (uyeg=="ok")
 {
     
 function oklf(clickoto) {
-   alert("girisvar");
-	$('#iadeinc').modal('show');
-	document.getElementById("staticBackdropLabelgoto").innerHTML = "<img src='https://iade.com/imgs/"+clickoto.toLowerCase()+".jpg' width='50%' height='50%' class='imcls1'>";
-	document.getElementById("gotobrand").innerHTML = clickoto+" Sitesine Devam Et &raquo;";
-	document.getElementById("gotobrand").setAttribute("name",clickoto);
-	//reply_click(this.id);
-	
-	
-	
+	alert("girisvar");
+    //$('#iadeinc').modal('show');
+    //location.href="https://iade.com/tr/go.html?brand="+clickoto;}    
 } 
 else 
 {
 //document.getElementById("staticBackdropLabelgoto").innerHTML = this.id+" sitesine gidiyorsunuz...";	
 function oklf(clickoto) {
-  
-	
-alert("girisyok");
-    //$('#iadeinc').modal('show');
-    
-	location.href="https://iade.com/tr/go.html?brand="+clickoto;}    	
-	
-	
+	alert("girisyok");
+	$('#iadeinc').modal('show');
+	document.getElementById("staticBackdropLabelgoto").innerHTML = "<img src='https://iade.com/imgs/"+clickoto.toLowerCase()+".jpg' width='50%' height='50%' class='imcls1'>";
+	document.getElementById("gotobrand").innerHTML = clickoto+" Sitesine Devam Et &raquo;";
+	document.getElementById("gotobrand").setAttribute("name",clickoto);
+	//reply_click(this.id);
 }     
 }
 </script> 
