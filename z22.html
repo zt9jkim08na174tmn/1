@@ -1245,7 +1245,7 @@ function gobra(wtgo) {
     location.href="https://iade.com/tr/go.html?brand="+wtgo.toLowerCase();    
 } 	
 
-if (uyeg!=="ok")
+if (uyeg=="ok")
 {
     
 function oklf(clickoto) {
@@ -1257,8 +1257,8 @@ else
 {
 //document.getElementById("staticBackdropLabelgoto").innerHTML = this.id+" sitesine gidiyorsunuz...";	
 function oklf(clickoto) {
-  
-	$('#iadeinc').modal('show');
+        $('#iadeRegister').modal('show');
+	//$('#iadeinc').modal('show');
 	document.getElementById("staticBackdropLabelgoto").innerHTML = "<img src='https://iade.com/imgs/"+clickoto.toLowerCase()+".jpg' width='50%' height='50%' class='imcls1'>";
 	document.getElementById("gotobrand").innerHTML = clickoto+" Sitesine Devam Et &raquo;";
 	document.getElementById("gotobrand").setAttribute("name",clickoto);
