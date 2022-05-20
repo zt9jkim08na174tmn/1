@@ -39,8 +39,8 @@
             </li>
           </ul>
           <div class="d-flex" id="dflex2">
-            <button class="btn btn-success btn4" onclick="wtstrta()" id="uprofil" type="submit" style="font-family: 'Roboto', sans-serif;font-weight:lighter">Profilim</button>
-            <button class="btn btn-success btn4" onclick="wtstrtb()" id="ukazanc" type="submit" style="font-family: 'Roboto', sans-serif;font-weight:lighter">Kazançlarım</button>
+            <button class="btn btn-success btn4" onclick="wtstrta0();wtstrta()" id="uprofil" type="submit" style="font-family: 'Roboto', sans-serif;font-weight:lighter">Profilim</button>
+            <button class="btn btn-success btn4" onclick="wtstrtb0();wtstrtb()" id="ukazanc" type="submit" style="font-family: 'Roboto', sans-serif;font-weight:lighter">Kazançlarım</button>
             <button class="btn btn-success btn4" id="ulogout" type="submit" style="font-family: 'Roboto', sans-serif;font-weight:lighter">Çıkış</button>		  		  
             <button class="btn btn-success btn1" id="ugiris" type="submit" style="font-family: 'Roboto', sans-serif;font-weight:lighter">Üye Girişi</button>
             <button class="btn btn-success btn2" id="ukayit" type="submit" style="font-family: 'Roboto', sans-serif;font-weight:lighter">Ücretsiz Üye Ol</button>
@@ -61,6 +61,9 @@
 			  //document.getElementById("ifr").src="https://www.iade.com/affiliates/panel.php#PersonalDetails";
 		  }
 		  
+		  function wtstrta0() {document.getElementById("ifr").src="https://www.iade.com/affiliates/panel.php#PersonalDetails";
+		  }
+		  
 		  function wtstrtb() {
 			 
 	var date = new Date;
@@ -68,6 +71,9 @@
         var expires = "; expires=" + date.toGMTString();
         document.cookie = "wtstrt=earnings" + expires + "; path=/; domain=.iade.com";
 			  //document.getElementById("ifr").src="https://www.iade.com/affiliates/panel.php#Transactions-List"; 
+		  }
+		  
+		  function wtstrtb0() {document.getElementById("ifr").src="https://www.iade.com/affiliates/panel.php#Transactions-List";
 		  }
 		  
 		  function wtstrtc() {
