@@ -39,8 +39,8 @@
             </li>
           </ul>
           <div class="d-flex" id="dflex2">
-            <button class="btn btn-success btn4" onclick="wtstrta();wtstrta0()" id="uprofil" type="submit" style="font-family: 'Roboto', sans-serif;font-weight:lighter">Profilim</button>
-            <button class="btn btn-success btn4" onclick="wtstrtb();wtstrtb0()" id="ukazanc" type="submit" style="font-family: 'Roboto', sans-serif;font-weight:lighter">Kazançlarım</button>
+            <button class="btn btn-success btn4" onclick="wtstrta()" id="uprofil" type="submit" style="font-family: 'Roboto', sans-serif;font-weight:lighter">Profilim</button>
+            <button class="btn btn-success btn4" onclick="wtstrtb()" id="ukazanc" type="submit" style="font-family: 'Roboto', sans-serif;font-weight:lighter">Kazançlarım</button>
             <button class="btn btn-success btn4" id="ulogout" type="submit" style="font-family: 'Roboto', sans-serif;font-weight:lighter">Çıkış</button>		  		  
             <button class="btn btn-success btn1" id="ugiris" type="submit" style="font-family: 'Roboto', sans-serif;font-weight:lighter">Üye Girişi</button>
             <button class="btn btn-success btn2" id="ukayit" type="submit" style="font-family: 'Roboto', sans-serif;font-weight:lighter">Ücretsiz Üye Ol</button>
@@ -59,6 +59,7 @@
         var expires = "; expires=" + date.toGMTString();
         document.cookie = "wtstrt=profile" + expires + "; path=/; domain=.iade.com";
 			  //document.getElementById("ifr").src="https://www.iade.com/affiliates/panel.php#PersonalDetails";
+			  wtstrta0();
 		  }
 		  
 		  function wtstrta0() {document.getElementById("ifr").src="https://www.iade.com/affiliates/panel.php#PersonalDetails";
@@ -71,6 +72,7 @@
         var expires = "; expires=" + date.toGMTString();
         document.cookie = "wtstrt=earnings" + expires + "; path=/; domain=.iade.com";
 			  //document.getElementById("ifr").src="https://www.iade.com/affiliates/panel.php#Transactions-List"; 
+			  wtstrtb0();
 		  }
 		  
 		  function wtstrtb0() {document.getElementById("ifr").src="https://www.iade.com/affiliates/panel.php#Transactions-List";
