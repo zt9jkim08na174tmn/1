@@ -1,0 +1,37 @@
+<div class="modal fade" id="iadeLogin" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel" style="font-family: 'Poppins',sans-serif">Üye Girişi</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+          <div id="aftersnp"></div>
+        <form action="https://www.iade.com/affiliates/login.php?auth=login" method="post" name="lgform" id="lgform">
+          
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Kullanıcı Adınız (Telefon Numaranız)</label>
+            <input type="text" name="username" id="myusern" class="form-control">
+            <!--<div id="emailHelp" class="form-text">Telefon numaralarınız asla 3. şahıslar ile paylaşılmaz.</div>-->
+          </div>
+          
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Şifre</label>
+            <input type="password" name="password" id="mypassw" class="form-control" id="exampleInputPassword1">
+          </div>
+          
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1" name="rememberMe" checked>
+            <label class="form-check-label" for="exampleCheck1">Beni Hatırla</label>
+          </div>
+          
+          <button type="submit" name="mySubmit" value"Login" style="width:100%;font-size:20px" class="btn btn-primary">Giriş Yap</button>
+          </form>
+          <br>
+          <p><b>Şifrenizi Hatırlamıyor Musunuz?</b><br>S yazıp 08503057757'ye SMS gönderdiğinizde yeni şifreniz telefonunuza gönderilir.</p>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
