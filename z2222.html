@@ -39,8 +39,8 @@
             </li>
           </ul>
           <div class="d-flex" id="dflex2">
-            <button class="btn btn-success btn4" onclick="hdfl2()" id="uprofil" type="submit" style="font-family: 'Roboto', sans-serif;font-weight:lighter">Profilim</button>
-            <button class="btn btn-success btn4" id="ukazanc" type="submit" style="font-family: 'Roboto', sans-serif;font-weight:lighter">Kazançlarım</button>
+            <button class="btn btn-success btn4" onclick="wtstrta()" id="uprofil" type="submit" style="font-family: 'Roboto', sans-serif;font-weight:lighter">Profilim</button>
+            <button class="btn btn-success btn4" onclick="wtstrtb()" id="ukazanc" type="submit" style="font-family: 'Roboto', sans-serif;font-weight:lighter">Kazançlarım</button>
             <button class="btn btn-success btn4" id="ulogout" type="submit" style="font-family: 'Roboto', sans-serif;font-weight:lighter">Çıkış</button>		  		  
             <button class="btn btn-success btn1" id="ugiris" type="submit" style="font-family: 'Roboto', sans-serif;font-weight:lighter">Üye Girişi</button>
             <button class="btn btn-success btn2" id="ukayit" type="submit" style="font-family: 'Roboto', sans-serif;font-weight:lighter">Ücretsiz Üye Ol</button>
@@ -50,7 +50,23 @@
         </div>
       </div>
     </nav>
-	 
+
+	  <script>
+		  function wtstrta() {
+	var date = new Date;
+        date.setTime(date.getTime() + 315000000000);
+        var expires = "; expires=" + date.toGMTString();
+        document.cookie = "wtstrt=profile" + expires + "; path=/; domain=.iade.com";
+		  }
+		  
+		  function wtstrtb() {
+	var date = new Date;
+        date.setTime(date.getTime() + 315000000000);
+        var expires = "; expires=" + date.toGMTString();
+        document.cookie = "wtstrt=earnings" + expires + "; path=/; domain=.iade.com";
+		  }
+		  
+	  </script>
 
    <script>
 	function hdfl2() {   
