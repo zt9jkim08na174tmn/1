@@ -53,17 +53,21 @@
 
 	  <script>
 		  function wtstrta() {
+			  
 	var date = new Date;
         date.setTime(date.getTime() + 315000000000);
         var expires = "; expires=" + date.toGMTString();
         document.cookie = "wtstrt=profile" + expires + "; path=/; domain=.iade.com";
+			  document.getElementById("ifr").src="https://www.iade.com/affiliates/panel.php#PersonalDetails";
 		  }
 		  
 		  function wtstrtb() {
+			 
 	var date = new Date;
         date.setTime(date.getTime() + 315000000000);
         var expires = "; expires=" + date.toGMTString();
         document.cookie = "wtstrt=earnings" + expires + "; path=/; domain=.iade.com";
+			  document.getElementById("ifr").src="https://www.iade.com/affiliates/panel.php#Transactions-List"; 
 		  }
 		  
 		  function wtstrtc() {
@@ -990,8 +994,8 @@ $("#examplet2").autocomplete({
 	      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-         <iframe scrolling="no" width="100%" height="400px" src="https://iade.com/modal1" title="earnings"></iframe>
-
+         <iframe id="ifr" frameborder="0" width="100%" height="400px" title="earnings"></iframe>
+         <!--<iframe id='ifr' frameborder="0" scrolling="no" width="550" height="400">-->
         </div>
       </div>
     </div>
