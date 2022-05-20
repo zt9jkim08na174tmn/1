@@ -66,6 +66,13 @@
         document.cookie = "wtstrt=earnings" + expires + "; path=/; domain=.iade.com";
 		  }
 		  
+		  function wtstrtc() {
+	var date = new Date;
+        date.setTime(date.getTime() + 315000000000);
+        var expires = "; expires=" + date.toGMTString();
+        document.cookie = "wtstrt=logined" + expires + "; path=/; domain=.iade.com";
+		  }
+		  
 	  </script>
 
    <script>
@@ -353,7 +360,7 @@ function myFunction(item, index) {
             <label class="form-check-label" for="exampleCheck1">Beni Hatırla</label>
           </div>
           
-          <button type="submit" name="mySubmit" value"Login" style="width:100%;font-size:20px" class="btn btn-primary">Giriş Yap</button>
+          <button type="submit" onclick="wtstrtc()" name="mySubmit" value"Login" style="width:100%;font-size:20px" class="btn btn-primary">Giriş Yap</button>
           </form>
           <br>
           <p><b>Şifrenizi Hatırlamıyor Musunuz?</b><br>S yazıp 08503057757'ye SMS gönderdiğinizde yeni şifreniz telefonunuza gönderilir.</p>
