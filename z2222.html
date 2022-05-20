@@ -1,0 +1,1270 @@
+<!doctype html>
+<html lang="tr">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link href="css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+      <link rel="stylesheet" type="text/css" href="css/stylea.css">
+      <link rel="stylesheet" type="text/css" href="css/all.min.css">
+      <link rel="stylesheet" type="text/css" href="css/jquery-ui.css">
+      <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.min.css">  
+      <script src="js/jquery.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <script src="js/jquery.fancybox.js" crossorigin="anonymous"></script>
+      <link rel="stylesheet" type="text/css" href="css/owl.carousel.css" />
+      <link rel="stylesheet" type="text/css" href="css/owl.theme.default.min.css" />
+      <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+      <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
+      <title>İADE ile Tüm Alışverişlerinizden Para İadesi Kazanın</title> 
+  </head>
+  <body style="font-family: 'Poppins', sans-serif">
+   <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <img class="img-fluid navbar-brand" src="img/iade-logo.png" width="100">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Ana Sayfa</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" onclick="$('#iadepremium').modal('show')">Premium</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" onclick="$('#iadebiz').modal('show')">Biz Kimiz?</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://api.whatsapp.com/send/?phone=905061001090&text&app_absent=0" target="_blank">İletişim</a>
+            </li>
+          </ul>
+          <div class="d-flex" id="dflex2">
+            <button class="btn btn-success btn4" onclick="hdfl2()" id="uprofil" type="submit" style="font-family: 'Roboto', sans-serif;font-weight:lighter">Profilim</button>
+            <button class="btn btn-success btn4" id="ukazanc" type="submit" style="font-family: 'Roboto', sans-serif;font-weight:lighter">Kazançlarım</button>
+            <button class="btn btn-success btn4" id="ulogout" type="submit" style="font-family: 'Roboto', sans-serif;font-weight:lighter">Çıkış</button>		  		  
+            <button class="btn btn-success btn1" id="ugiris" type="submit" style="font-family: 'Roboto', sans-serif;font-weight:lighter">Üye Girişi</button>
+            <button class="btn btn-success btn2" id="ukayit" type="submit" style="font-family: 'Roboto', sans-serif;font-weight:lighter">Ücretsiz Üye Ol</button>
+          </div>
+			
+
+        </div>
+      </div>
+    </nav>
+	 
+
+   <script>
+	function hdfl2() {   
+	document.getElementById('mainp1').style.display = 'none'; 
+	document.getElementById("ifr").src="https://www.iade.com/affiliates/panel.php";	
+	//document.getElementById('mainp2').style.display = 'block';	
+	}
+	  </script>	   
+	   
+      <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+      
+<script type="text/javascript">
+    $(ugiris).on('click', function() {
+	$('#iadeLogin').modal('show');
+    });
+    
+    $(ukayit).on('click', function() {
+        $('#iadeRegister').modal('show');
+    });
+  
+  $(ukazanc).on('click', function() {
+        $('#iadeearnings').modal('show');
+    });
+	
+$(uprofil).on('click', function() {
+        $('#iadeprofil').modal('show');
+    });	
+	
+   $(zgiris).on('click', function() {
+        $('#iadeRegister').modal('hide');
+	setTimeout(function(){$('#iadeLogin').modal('show');}, 500);
+    });	
+	$(zterms).on('click', function() {
+        $('#iadeRegister').modal('hide');
+	setTimeout(function(){$('#iadeTerms').modal('show');}, 500);
+    });	
+	
+$(z2giris).on('click', function() {
+        
+	document.getElementById('ugiris').click();  
+    });		
+
+	  </script>
+	  
+	  <script>
+//document.getElementById("zgiris").addEventListener("click", setTimeout(displayDate, 2000));
+//		  function displayDate() {
+//  document.getElementById('ugiris').click();
+//}
+		  
+//document.getElementById("zgiris").addEventListener("click", displayDate);
+		  //function displayDate() {
+  //setTimeout(function(){document.getElementById('ugiris').click();}, 300);
+  //setTimeout(function(){$('#iadeLogin').modal('show');}, 300);
+			  
+			  
+}		  
+  
+</script>
+	  </script>		  
+	  
+<script>
+$("#close1_open2").on('click', function() {
+    $("#modal1").modal('hide');
+    $("#modal2").modal('show');
+});	
+</script>	  
+
+<style>
+.btn-primary2 {background-color:red;color:white;}
+.home-head {font-family: 'Poppins',sans-serif !important;}
+.btn-primary {font-family: 'Poppins',sans-serif;font-size:0.8em;}
+.btn {font-family: 'Poppins',sans-serif !important;}
+
+.btn-primary2 {background-color:red;color:white;}
+.home-head {font-family: 'Poppins',sans-serif !important;}
+.btn-primary {font-family: 'Poppins',sans-serif;font-size:0.8em;}
+.btn {font-family: 'Poppins',sans-serif !important;}
+h1,p,span,h5 {font-family: 'Poppins',sans-serif !important;}
+@media only screen and (max-width: 14000px) {
+    .card-nasil-calisir-area p {
+        line-height: 33px;
+        font-size: 18px;
+    }
+}
+@media only screen and (max-width: 1400px) {
+    .card-nasil-calisir-area p {
+        line-height: 34px;
+        font-size: 16px;
+    }
+    .cm1
+    {
+       // width: 120px;
+    }
+}
+@media only screen and (max-width: 1280px) {
+    .card-nasil-calisir-area p {
+        line-height: 30px;
+        font-size: 14px;
+    }
+    
+    .cm1
+    {
+       // width: 110px;
+    }
+    
+}
+@media only screen and (max-width: 768px) {
+  .one,.two,.three,.form-control,.btmc1 {
+   font-size:14px; 
+  }
+  .immod {width:15px;}	
+  .imcls1 {width:30%;height:30%;}	
+  
+    .card-nasil-calisir-left-area {
+        margin-top: 1.5rem;
+    }
+    .bg-iade2 {
+        padding: 1.5rem 0;
+        background: #f3f3f3;
+    }
+}
+@media only screen and (max-width: 350px) {
+    .card-nasil-calisir-area p {
+        line-height: 28px;
+        font-size: 12px;
+    }
+}
+
+.cm1 {width:8rem;}
+ </style>
+
+<style>
+
+* 
+{font-family: 'Poppins', sans-serif}
+
+    .ytp-cued-thumbnail-overlay-image {height:101% !important;}
+    
+    .video-container {
+	position:relative;
+	padding-bottom:56.25%;
+	padding-top:0px;
+	height:0;
+	overflow:hidden;
+}
+
+.video-container iframe, .video-container object, .video-container embed {
+	position:absolute;
+	top:0;
+	left:0;
+	width:101%;
+	height:102%;
+}
+
+
+    </style>
+    
+    <style>
+        
+        
+
+
+.owl-carousel button.owl-dot {color:white;}
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {background:#pink;}
+    </style>
+ 
+	  
+	  <div class="search pcNone">
+       <input style="font-family: 'Poppins',sans-serif" onfocus="if (!window.__cfRLUnblockHandlers) return false; this.value=''" id="examplet" type="search" class="form-control search-input" placeholder="&#61442; Marka ara..." aria-label="Search" data-cf-modified-f65382b0d5acc05a642d11df-="">
+    </div>
+	  
+	  
+<!-- Modal -->
+<div class="modal fade" id="iadeAdb" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Lütfen Dikkat!</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+                <p class="modal-body">Adblock/Ublock Kullanıyorsunuz. Bu Durumda Alışverişinizi Kayıt Altına alamayız. Para İadesi Kazanabilmek İçin Reklam Engelleyicisini Kapatıp Sayfayı Yenileyin.</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal -->
+
+<!-- Modal -->
+<div class="modal" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Lütfen Dikkat</h5>
+        <button type="button" class="btn-close" data-dismiss="modal" aria-label="Kapat">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p class="modal-body">Adblock/Ublock Kullanıyorsunuz. Bu Durumda Alışverişinizi Kayıt Altına alamayız. Para İadesi Kazanabilmek İçin Reklam Engelleyicisini Kapatıp Sayfayı Yenileyin.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+<span id="togo" style="display:none;"></span>
+       
+   
+
+	 
+      
+      <div class="bg-iade animate__bounceInRight mobileNone" id="mainp1">
+         <div class="container-fluid">
+            <div class="row align-items-center slide-in-right">
+               <div class="col-md-12 text-center mb-3" style="float:left;width:79%">
+                  <h1 class="home-head" style="font-size:24px;text-align:left;margin-top:20px"><!--VPN ve Diğer-->Tüm Alışverişlerinizden Para İadesi Kazanın!</h1>
+               </div>
+               <div class="col-md-12 text-center mb-3" style="float:left;width:21%">
+       
+               
+           
+		       
+		<div class="text-right" style="margin-bottom:-13px;text-align:right">    
+                  
+                  <input style="font-family: 'Poppins',sans-serif;text-transform: capitalize" onfocus="if (!window.__cfRLUnblockHandlers) return false; this.value=''" type="text" class="form-control search-input" style="font-family: 'Poppins',sans-serif;text-transform: capitalize" id="examplet2" aria-describedby="emailHelp" placeholder="&#61442; Marka Arayın..." data-cf-modified-f65382b0d5acc05a642d11df-="">
+               
+</input>
+
+<i class="glyphicon glyphicon-user form-control-feedback"></i></div>
+               </div>       
+               
+               
+               
+               <!---maindiv-->
+<div class="owl-carousel owl-theme" id="demo">		       
+<script>
+let text = "";
+const fruits = ["Trendyol;20", "Gittigidiyor;30", "Udemy;40", "Boyner;30", "Morhipo;40", "Mavi;30", "Udemy;40", "Hostinger;30", "Udemy;40", "Hostinger;30", "Udemy;40", "Hostinger;30", "Udemy;40", "Hostinger;30", "Udemy;40", "Hostinger;30", "Udemy;40", "Hostinger;30", "Udemy;40", "Hostinger;30", "Udemy;40", "Hostinger;30", "Udemy;40", "Hostinger;30", "Udemy;40", "Hostinger;30", "Udemy;40", "Hostinger;30", "Udemy;40", "Hostinger;30", "Udemy;40", "Hostinger;30", "Zdemy;40"];
+fruits.forEach(myFunction);
+document.getElementById("demo").innerHTML = text;
+function myFunction(item, index) {
+  text += '<div class="col-md-6"><div class="card text-center cm1"><img class="card-img-top" style="padding: 1rem;" src="/imgs/'+item.split(";")[0].toLowerCase()+'.jpg" alt="Card image cap"><div class="card-body"><h5 class="card-title">'+item.split(";")[0]+'</h5><p class="card-text">%'+item.split(";")[1]+' İade</p><a href="#" class="btn btn-primary" id="'+item.split(";")[0]+'" onclick="oklf(this.id)">Siteye Git</a></div></div></div>'; 
+}
+</script>
+</div>
+            
+               
+               
+               
+            </div>
+         </div>
+      </div>
+<!-- Modal -->
+<div class="modal fade" id="iadeLogin" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel" style="font-family: 'Poppins',sans-serif">Üye Girişi</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+          <div id="aftersnp"></div>
+        <form action="https://www.iade.com/affiliates/login.php?auth=login" method="post" name="lgform" id="lgform">
+          
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Kullanıcı Adınız (Telefon Numaranız)</label>
+            <input type="text" name="username" id="myusern" class="form-control">
+            <!--<div id="emailHelp" class="form-text">Telefon numaralarınız asla 3. şahıslar ile paylaşılmaz.</div>-->
+          </div>
+          
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Şifre</label>
+            <input type="password" name="password" id="mypassw" class="form-control" id="exampleInputPassword1">
+          </div>
+          
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1" name="rememberMe" checked>
+            <label class="form-check-label" for="exampleCheck1">Beni Hatırla</label>
+          </div>
+          
+          <button type="submit" name="mySubmit" value"Login" style="width:100%;font-size:20px" class="btn btn-primary">Giriş Yap</button>
+          </form>
+          <br>
+          <p><b>Şifrenizi Hatırlamıyor Musunuz?</b><br>S yazıp 08503057757'ye SMS gönderdiğinizde yeni şifreniz telefonunuza gönderilir.</p>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="iadeSearch" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabeltest" style="width:80%">Alışverişlerinizden Para İadesi Kazanmak İçin Üye Olun!</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+          <div id="neyaz" style="text-align:center"></div>  
+       
+            <p style="text-align:center;color:blue" data-toggle="modal" data-target="#iadeLogin"><a style="text-decoration: none;" href="" data-bs-dismiss="modal" aria-label="Close">Siteye Git &raquo;</a></p>
+<button type="button" class="btn btn-default" data-toggle="modal" data-target="#iadeLogin" data-dismiss="modal">Close current, Launch Modal #3</button>
+        </div>
+      </div>
+    </div>
+ </div>
+ 
+ <!-- Modal -->
+<div class="modal fade" id="iadeRegister" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabeltest" style="width:80%">Alışverişlerinizden Para İadesi Kazanmak İçin Üye Olun!</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+            
+       <form class="CustomHtmlSignupForm" id="affiliateSignup" action="https://www.iade.com/affiliates/signup.php" method="post">
+          
+          <div class="mb-3">
+            <label for="exampleInputName1" class="form-label">Telefon Numaranız (Örn: 05061001090)</label>
+            <input type="tel" id="username" name="username" class="form-control uinputs" maxlength="11" autocomplete="off">
+          </div>
+          
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Şifre Belirleyiniz (En Az 8 Karakter)</label>
+            <input type="password" id="rpassword" name="rpassword" class="form-control uinputs" oldid="exampleInputPassword1" maxlength="99" autocomplete="off">
+          </div>
+          
+          <div class="mb-3 form-check">
+              <input style="display:none" type="password" autocomplete="new-password" id="rpFieldAgain" name="rpFieldAgain" value="12345678">
+              <input type="hidden" id="firstname" name="firstname" value="a">
+              <input type="hidden" id="lastname" name="lastname" value="a">
+              <input type="hidden" name="agreeWithTerms" value="Y">
+              <input type="hidden" id="data1" name="data1" value="TR">
+              <input type="hidden" id="notificationemail" name="notificationemail" value="lutfendegistirin@iade.com">
+              <input type="hidden" id="data2" name="data2" value=" ">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1" name="rememberMe" checked>
+	      <label class="form-check-label" for="exampleCheck1"><span id="zterms" style="color:blue">Üyelik Sözleşmesi</span>'ni Kabul Ediyorum.</label>
+          </div>
+         
+          <div class="clear"></div>
+    <div id="FormMessage" class="" style="display:none;"></div>
+          
+          <button type="submit" style="width:100%;font-size:20px" class="btn btn-primary">Ücretsiz Üye Ol</button><p style="text-align:center;font-weight:bold;margin-top:15px">YA DA</p>
+                   <button type="button" onclick='location.href=document.getElementById("togo").innerHTML' style="width:100%;font-size:16px" class="btn btn-primary2" style="background-color:#4CAF50">İade İstemiyorum, Üye Olmadan Devam Et</button>
+            <p style="text-align:center;color:blue;margin-top:30px"><a href="#" id="zgiris" style="text-decoration:none">Zaten Üyeyim. Giriş Yap &raquo;</a></p>
+	     
+          </form>     
+
+        </div>
+      </div>
+    </div>
+ </div>
+ 
+
+
+<style>
+.slick-dots li {
+    height: 15px !important;
+    width: 15px !important;
+    border-radius: 50px !important;
+    display: inline-block !important;
+    
+	  
+}
+
+.slick-dots li button:before {
+    color: blue !important;
+    opacity: 1 !important;
+    font-size: 15px !important;
+}
+
+.slick-dots.active {
+    background-color: red !important;
+	color: red !important;
+}
+</style>
+
+ <div class="bg-iade pcNone">
+     <h1 class="home-head" style="font-size:15px;text-align:center;margin-top:-10px">Tüm Alışverişlerinizden Para İadesi Kazanın!</h1>
+ <div id="slick1">
+<script>
+let textx = "";
+fruits.forEach(myFunctionx);
+document.getElementById("slick1").innerHTML = textx;
+function myFunctionx(item, index) {
+textx += '<div class="slide-item"><div class="card text-center"><img class="card-img-top centerit" style="border-radius:10px;width:90px;align:center" src="/imgs/'+item.split(";")[0].toLowerCase()+'.jpg" alt="Card image cap"><div class="card-body"><p class="card-text">%'+item.split(";")[1]+' İade</p><a href="#" class="btn btn-primary" id="'+item.split(";")[0]+'" onclick="oklf(this.id)">Siteye Git</a></div></div></div>';
+}
+</script>	
+		
+	</div>
+</div>
+  
+  <script type="text/javascript" src="js/slick.min.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('#slick1').slick({
+        
+		rows: 3,
+		dots: true,
+		arrows: false,
+		autoplay: true,
+		infinite: true,
+		speed: 300,
+		slidesToShow: 3,
+		slidesToScroll: 1
+      });
+    });
+  </script>
+
+
+ <div class="bg-iade2">
+   <div class="container">
+      <div class="row align-items-center">
+         <div class="col-md-6 text-center card-nasil-calisir-right-area">
+             <h1 class="card" style="text-align:center;padding:8px">İADE Nedir?</h1>
+            <div class="" style="height:350px;">
+               <a href="https://www.youtube.com/watch?v=9BgrZhDcdNU" data-fancybox="gallery">
+            <div class="card image-div" style="border-radius:10px; height:350px;" style="border: none; position: absolute; top: 0; left: 0; height: 100%; width: 100%;"  allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;" allowfullscreen="true">
+               <img class="card-image" src="img/videothumbnail1.jpg">
+               <div class="overlay">
+                  <i class="fas fa-play"></i>
+               </div>         
+            </div>
+         </a>
+            </div>
+         </div>
+         <div class="col-md-6 text-right card-nasil-calisir-left-area" style="margin-bottom:0px">
+            
+               <h1 class="card" style="text-align:center;margin-top:0px;padding:8px">Nasıl Çalışır?</h1>
+               
+            
+            <h1 class="card-nasil-calisir-area card" style="font-size:16px;padding:8px;padding-top:24px;margin-top:2px; height: 273px;">
+            <p class="one">
+               <img src="img/1.jpg" width="30">
+               <span>Üye olun ve alışveriş yapmak istediğiniz siteyi ziyaret ederek alışveriş yapın.</span>
+            </p>
+            <p class="two">
+               <img src="img/2.jpg" width="30">
+               <span>iade.com üye panelinize girerek ödeme alma bilgilerinizi tamamlayın.</span>
+            </p>
+            <p class="three">
+               <img src="img/3.jpg" width="30">
+               <span>Ertesi iş günü(*) kazandığınız iade banka hesabınıza gönderilecektir.</span>
+            </p>
+            </h1>
+            
+            <br>
+            <a href="#" class="btn btn-secondary btn-lg" style="margin-top:-2.5px;width:100%">Alışverişe Başla</a>
+         </div>
+         
+      </div>
+   </div>
+</div>
+      
+      <div class="bg-iade3">
+         <div class="container">
+		 <div class="col-md-8 offset-md-2">
+                  <a name="markalar"></a><div class="alert alert-primary text-center">TÜM MARKALAR<br>Dilediğiniz Markanın Üzerine Tıklayarak Alışverişe Gidebilirsiniz.</div>
+               </div>
+		 
+            <div class="row" id="demorow">
+               
+		    
+		    
+                          
+	<script>
+let texty = "";
+fruits.forEach(myFunctiony);
+document.getElementById("demorow").innerHTML = texty;
+function myFunctiony(item, index) {
+texty += '<div class="col-4 col-lg-2"><div class="well"><span>'+item.split(";")[0]+'</span><br><span id="'+item.split(";")[0].toLowerCase()+'">%'+item.split(";")[1]+' İade</span></div></div>';
+}
+</script>	    
+		    
+               
+            </div>
+         </div>
+      </div>
+      <div class="bg-iade2">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12 text-center mb-5">
+                  <h1 class="text-dark">Neden Para Veriyoruz?</h1>
+                  <b class="text-muted">iade.com'da listelenen tüm firmalar ile iş ortaklığı yürütmekteyiz. Sizleri alışveriş sitelerine yönlendirmemiz karşılığında iş ortaklarımız bize ödeme yapmaktadırlar. İş ortaklarımızdan kazandığımız bu geliri, alışveriş yapan üyelerimizle paylaşıyoruz.</b>
+               </div>
+               <div class="col-12 col-lg-3">
+                  <div class="card text-center">
+			  <i class="fas fa-dollar-sign fa-6x" style="color:gray;margin-top:10px"></i>
+                     <div class="card-body">
+                        <p class="card-head">Alışveriş Başına Değişen<br>Oranlarda İade Kazanırsınız!</p>
+                        <a href="#" class="btn btn-primary"> Alışveriş Yap</a>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-12 col-lg-3">
+                  <div class="card text-center">
+			  <i class="fas fa-cart-plus fa-6x" style="color:gray;margin-top:10px"></i>
+                     
+<div class="card-body">
+                        <p class="card-head">Ne Kadar Çok Alışveriş<br>O Kadar Fazla Kazanç!</p>
+                        <a href="#" class="btn btn-primary"> Alışveriş Yap</a>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-12 col-lg-3">
+                  <div class="card text-center">
+			  <i class="fas fa-clock fa-6x" style="color:gray;margin-top:10px"></i>
+			  
+                     <div class="card-body">
+                        <p class="card-head">İADE Var,<br>Beklemek Yok!</p>
+                        <a href="#" class="btn btn-primary"> Alışveriş Yap</a>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-12 col-lg-3">
+                  <div class="card text-center">
+			  <i class="fas fa-thumbs-up fa-6x" style="color:gray;margin-top:6px"></i>
+                     <div class="card-body">
+                        <p class="card-head">Hepsi Bu Kadar! Siz Alışveriş Yapıyorsunuz, Biz İade!</p>
+                        <a href="#" class="btn btn-primary"> Alışveriş Yap</a>
+                     </div>
+                  </div>
+               </div>
+               
+            </div>
+         </div>
+      </div>
+      <div class="bg-iade3">
+         <div class="container">
+            <div class="row align-items-center">
+               <div class="col-md-6 text-center">
+                  <h3 class="text-light">Bizi Arkadaşlarınıza Önerebilirsiniz</h3>
+		       <div class="icons"><a href="https://www.facebook.com/sharer/sharer.php?u=https://iade.com/?flink" target="_blank"><i class="fab fa-facebook"></i></a><a href="https://twitter.com/home?status=https://iade.com/?tlink" target="_blank"><i class="fab fa-twitter"></i></a><a href="https://api.whatsapp.com/send?text=https://iade.com/?wlink" data-action="share/whatsapp/share" target="_blank"><i class="fab fa-whatsapp"></i></a></div>
+               </div>
+               <div class="col-md-6 text-center text-light">
+		       <b>iade.com</b> <a href="https://www.google.com/search?q=copyright" style="text-decoration:none;color:white">©</a> <span id="copyright"><script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))</script></span>. Tüm hakları saklıdır.
+                  <ul>
+                     <li><a href="https://iade.com/tr/sss.html#sartlar" target="popup" onclick="window.open('https://iade.com/tr/sss.html#sartlar','popup','width=600,height=600'); return false;">Kullanım Şartları</a></li>
+		     <li><a href="https://iade.com/tr/sss.html#gizlilik" target="popup" onclick="window.open('https://iade.com/tr/sss.html#gizlilik','popup','width=600,height=600'); return false;">Gizlilik Politikası</a></li>
+		     <li><a href="https://iade.com/tr/sitemap.html" target="popup" onclick="window.open('https://iade.com/tr/sitemap.html','popup','width=600,height=600'); return false;">Site Haritası</a></li>	  
+                     
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </div>
+      <script>
+          //default settings:
+autoplay:false
+autoplayTimeout:5000
+autoplayHoverPause:false
+
+      </script>
+      <script type="text/javascript">
+var owl = $('.owl-carousel');
+owl.owlCarousel({
+    //items:3,
+    items:10,
+    dots:true,
+    
+    responsiveClass:true,
+    responsive:{
+        1020:{
+            items:7,
+            nav:true
+        },
+        1200:{
+            items:9,
+            nav:false
+        },
+        1350:{
+            items:10,
+            nav:false
+        },
+        1600:{
+            items:12,
+            nav:false
+        },
+        1900:{
+            items:14,
+            nav:true,
+            loop:false
+        },
+        2500:{
+            items:19,
+            nav:true,
+            loop:false
+        },
+        3800:{
+            items:25,
+            nav:true,
+            loop:false
+        },
+        5000:{
+            items:30,
+            nav:true,
+            loop:false
+        }
+        
+    }
+    
+    
+});
+
+
+jQuery('.owl-carousel').trigger('play.owl.autoplay',[0000]);
+
+    function setSpeed(){
+        jQuery('.owl-carousel').trigger('play.owl.autoplay',[0000]);
+    }
+
+    setTimeout(setSpeed, 0000);
+      </script>
+      
+      
+  <script type="text/javascript" src="js/jquery-ui.js"></script>
+      <script type="text/javascript">
+
+var array1 = [];
+var array2 = [];
+
+for (var i = 0; i < fruits.length; i++) {
+    var split = fruits[i].split(";");  // just split once
+    array1.push(split[0]); // before the dot
+    array2.push(split[1]); // after the dot
+} 
+
+
+$("#examplet").autocomplete({
+    source: array1,
+    select: function(event, ui) {
+
+        $('#iadeSearch').modal('show');
+        document.getElementById("staticBackdropLabeltest").innerHTML = ui.item.value+" bulundu!";
+        document.getElementById("neyaz").innerHTML = "<img src='https://iadeniz.com/"+ui.item.value.toLowerCase()+".jpg'><br><br><p>"+document.getElementById(ui.item.value).innerHTML+"</p>";
+  
+
+
+				var originalEvent 													= event,
+					input__event_type												= '',
+					input__selection_type											= '';
+
+				while ( originalEvent ) {
+					if ( originalEvent.keyCode 										=== 13 ) {
+						originalEvent.stopPropagation();
+					}
+					if ( originalEvent 												=== event.originalEvent ) {
+						break;
+					}
+					originalEvent 													= event.originalEvent;
+				}
+
+				input__event_type													= originalEvent.type;
+				
+				if ( input__event_type 												=== 'menuselect' ) { // selected by keyboard instead of mouse/touch
+					input__selection_type											= 'menuselect'
+				}
+
+    }
+});
+
+$("#examplet2").autocomplete({
+    source: array1,
+    select: function(event, ui) {
+
+        $('#iadeSearch').modal('show');
+        document.getElementById("staticBackdropLabeltest").innerHTML = ui.item.value+" bulundu!";
+        document.getElementById("neyaz").innerHTML = "<img src='https://iadeniz.com/"+ui.item.value.toLowerCase()+".jpg'><br><br><p>"+document.getElementById(ui.item.value).innerHTML+"</p>";
+  
+
+
+				var originalEvent 													= event,
+					input__event_type												= '',
+					input__selection_type											= '';
+
+				while ( originalEvent ) {
+					if ( originalEvent.keyCode 										=== 13 ) {
+						originalEvent.stopPropagation();
+					}
+					if ( originalEvent 												=== event.originalEvent ) {
+						break;
+					}
+					originalEvent 													= event.originalEvent;
+				}
+
+				input__event_type													= originalEvent.type;
+				
+				if ( input__event_type 												=== 'menuselect' ) { // selected by keyboard instead of mouse/touch
+					input__selection_type											= 'menuselect'
+				}
+
+    }
+});
+
+
+
+
+
+      </script>
+      
+     
+     
+
+<script type="text/javascript">
+    if (typeof jQuery == "undefined") {
+        var script = document.createElement("script");
+        script.type = "text/javascript";
+        script.src = "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js";
+        script.onload = function () {
+            loadValidator();
+        }
+        document.getElementsByTagName("head")[0].appendChild(script);
+    } else {
+        loadValidator();
+    }
+    function loadValidator() {
+        if (typeof jQuery.validator == "undefined") {
+            var script = document.createElement("script");
+            script.type = "text/javascript";
+            script.src = "js/jquery.validate.js";
+            script.onload = function () {
+                preparePAPform();
+            }
+            document.getElementsByTagName("head")[0].appendChild(script);
+        } else {
+            preparePAPform();
+        }
+    }
+    function preparePayoutMethods() {
+        $("#payoutOptions").on("change",function(){
+            $("div.payoutMethodFields").hide();
+            var payoutMethodsDivId = $(this).val();
+            if (payoutMethodsDivId != "") {
+                $("#"+payoutMethodsDivId).show();
+            }
+        });
+        $("#payoutOptions").val("").change();
+    }
+    function preparePAPform () {
+        preparePayoutMethods();
+        var signupForm = jQuery("#affiliateSignup"); /* ID of the signup form */
+        jQuery.validator.addMethod("referralIDconstrain", function(value, element) {
+            return this.optional(element) || /^[a-z0-9_-]+$/i.test(value);
+        }, " Referral ID can only contain letters, numbers, underscores and hyphens.");
+	jQuery.validator.addMethod("trphonecheck", function(value, element) {
+            return this.optional(element) || /^05/i.test(value);
+        }, " Geçerli bir telefon numarası giriniz!");    
+	    
+        var validator = signupForm.validate({
+            rules: {   
+                refid: {referralIDconstrain: true},
+                notificationemail: {required: true, email: true},
+                name: {required: true},
+                firstname: {required: true},
+                lastname: {required: true},
+                username: {required: true, rangelength: [11, 11], trphonecheck: true},
+                data1: {required: true},
+                data2: {required: true},
+                rpassword: {required: true, rangelength: [8, 99]},
+                rpFieldAgain: {equalTo: "#rpassword"},
+                agreeWithTerms: {required: true}
+            },
+            messages: {
+                username: "05 ile başlayan 11 haneli bir telefon numarası giriniz!",
+                rpassword: {rangelength: jQuery.validator.format("Şifreniz en az 8 karakter olmalıdır!"), required: "Bu alan gereklidir!"},
+                rpFieldAgain: "Passwords do not match",
+                refid: {required: "Please enter your ID, it will be used in your affiliate links"},
+                agreeWithTerms: "You must accept the terms and conditions"
+		   
+            },
+            submitHandler: function(form, event) {
+                event.preventDefault();submitToPAP(signupForm, validator);
+            }
+        });
+    }
+    function submitToPAP (signupForm, validator) {
+        var submitButton = jQuery("#affiliateSignup input[type='submit']");
+        submitButton.attr("disabled", "disabled"); /* Disable the submit button to prevent repeated clicks */
+        submitButton.attr("value","Signing up...");
+        var formArray = signupForm.serializeArray();
+        formArray.push({name: "method", value: "jsonp"});
+        var formQueryString = jQuery.param(formArray);
+        jQuery.ajax({
+            type: "GET",
+            url: signupForm.attr("action"),
+            data: formQueryString,
+            dataType: "jsonp",
+            success: function(data) {
+                if(data.successMessage != "") {
+                    /* action on success, e.g. display success message and redirect to http://www.SuccessUrl.com after 1 second or anything else you'd like instead. */
+                    //jQuery("#FormMessage").html(data.successMessage);
+                    //submitButton.attr("value","Redirecting");
+                    //setTimeout(function(){window.location = "http://www.SuccessUrl.com/";},1000);
+                    //alert("evet");
+                    $('#iadeRegister').modal('hide')
+                    //$('#iadeSucc').modal('show');
+		    //$('#iadeLogin').modal('show');
+                    document.getElementById("myusern").value = document.getElementById("username").value;
+                    document.getElementById("mypassw").value = document.getElementById("rpassword").value;
+                    document.getElementById("aftersnp").innerHTML = "<p style='color:red'><b>Otomatik Giriş Yapılıyor.</p>";
+                    //document.forms["lgform"].submit();
+		    document.lgform.mySubmit.click();
+		} else {
+                    /* action on error, display the cumulative error message under the form and per field error next to field */
+                    jQuery("#FormMessage").html(data.cumulativeErrorMessage);
+                    var fieldsError = {};
+                    jQuery.each(data, function (key, value) {
+                        if (key.indexOf("Error") != -1 && key != "cumulativeErrorMessage" && value != "" && formQueryString.indexOf(key.substring(0, key.length - 5)) != -1) {
+                            fieldsError[key.substring(0, key.length - 5)] = value;
+                        }
+                    });
+                    validator.showErrors(fieldsError);
+                    submitButton.removeAttr("disabled");
+                    submitButton.attr("value","Signup");
+                }
+            },
+            error: function (xhr, ajaxOptions, thrownError) {
+                var errorMessage = thrownError + " (Error code: " + xhr.status + ")";
+                if (xhr.status == "429") {
+                    errorMessage = "Too Many Requests, try again after some minutes.";
+                } 
+                jQuery("#FormMessage").html(errorMessage);
+                submitButton.removeAttr("disabled");
+                submitButton.attr("value","Signup");
+            }
+        });
+    }
+</script>
+<!--extra start -->   
+
+<style>
+.centerit {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}	
+</style>	
+
+<!-- Modal -->
+<div class="modal fade" id="iadebiz" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Biz Kimiz?</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+                <p class="modal-body"><b>Hakkımızda</b><br>iade.com olarak Fansha Bilişim LTD çatısı altında kurulduğumuz 2020 yılı Mayıs ayından beri üyelerimize alışverişlerinden en hızlı şekilde ve en yüksek oranlarda para iadesi kazandırmayı amaç edindik. Türkiye'nin en iyi para iadesi ve ürün/hizmet karşılaştırma sitelerinden biri olmaktan gurur duyuyor, ekibimizle dünya çapında bir marka olma yolunda çalışmalarımıza devam ediyoruz.
+		<br><br>	
+                <b>Adresimiz</b><br>Fansha Bilişim Teknolojileri LTD ŞTİ, Ömerağa Mahallesi, Hafız Şerif Sokak, No:33, 41000, İzmit/Kocaeli.
+                <br><br>	
+                <b>Kurumsal İletişim</b><br>İş ve ortaklık tekliflerinizin yanı sıra, sorularınıza ve görüşlerinize açığız. İletişim: <a href="https://iade.com/linkedin" taget="_blank">Linkedin</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal -->
+
+<!-- Modal -->
+<div class="modal fade" id="iadepremium" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Premium Üyelik</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+                <p class="modal-body">Premium üyelerimiz %250'ye kadar daha fazla oranda iade kazanırlar. Premium üyelik şartlara tabidir. Daha fazla bilgi için bizimle WhatsApp destek hattımızdan iletişime geçiniz.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal -->
+
+<!-- Modal -->
+<div class="modal fade" id="iadeadbl" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Premium Üyelik</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+                <p class="modal-body">Adblock/Ublock Kullanıyorsunuz. Bu Durumda Alışverişinizi Kayıt Altına alamayız. Para İadesi Kazanabilmek İçin Reklam Engelleyicisini Kapatıp Sayfayı Yenileyin.</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal -->
+
+<!-- Modal -->
+<div class="modal fade" id="iadeearnings" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true"
+     stye="overflow-y:scroll !important;">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Kazançlarım</h5>
+	      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+         <iframe width="100%" height="400px" src="https://iade.com/modal1" title="earnings"></iframe>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal -->
+
+<!-- Modal -->
+<div class="modal fade" id="iadeprofil" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true"
+     stye="overflow-y:scroll !important;">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Profilim</h5>
+	      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+         <iframe width="100%" height="400px" src="https://www.iade.com/affiliates/panel.php#PersonalDetails" title="profile"></iframe>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal -->
+
+<!-- Modal -->
+<div class="modal fade" id="iadeTerms" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true"
+     stye="overflow-y:scroll !important;">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Üyelik Sözleşmesi</h5>
+      </div>
+      <div class="modal-body">
+         <iframe width="100%" height="400px" src="https://iade.com/tr/sss.html" title="terms"></iframe>
+<button type="submit" value"Login" style="width:100%;font-size:20px" class="btn btn-primary" onclick="$('#iadeTerms').modal('hide');setTimeout(function(){$('#iadeRegister').modal('show');}, 500)">Kapat</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal -->
+
+<!-- Modal -->
+<div class="modal fade" id="iadeTerms1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true"
+     stye="overflow-y:scroll !important;">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Üyelik Sözleşmesi</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+         <iframe width="100%" height="400px" src="https://iade.com/tr/sss.html#sartlar" title="terms"></iframe>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal -->
+
+<!-- Modal -->
+<div class="modal fade" id="iadeTerms2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true"
+     stye="overflow-y:scroll !important;">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Üyelik Sözleşmesi</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+         <iframe width="100%" height="400px" src="https://iade.com/tr/sss.html#gizlilik" title="terms"></iframe>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal -->
+
+<!-- Modal -->
+<div class="modal fade bd-example-modal-xl" id="iadeinc" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabelgoto">İade Şartları ve Koşulları:</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+       <p><b>Lütfen Dikkat:</b></p>         
+			
+			<p class="one">
+               <img src="img/1.jpg" width="30" class="immod">
+               <span>Sadece iade.com'a üye girişi yaptıktan sonra iade.com üzerinden markaya tıklayarak gittiğiniz ve şartlarını sağladığınız alışverişlerin iadesini alırsınız.</span>
+            </p>
+            <p class="two">
+               <img src="img/2.jpg" width="30" class="immod">
+               <span>Alışveriş sepetiniz iade.com'dan ayrılmadan önce boş olmalı, sepetinizi doldurduktan sonra başka bir siteye uğramadan alışverişinizi tamamlamalısınız.</span>
+            </p>
+            <p class="three">
+               <img src="img/3.jpg" width="30" class="immod">
+               <span>Adblock/Ublock gibi reklam engelleyiciler ya da Gizli/Incognito tarayıcı modu <u>kullanmamalısınız</u>.</span>
+            </p>
+			
+
+			
+	      <p style="margin-top:50px;margin-bottom:-1px"><b>İade Oranları ve Şartları:</b></p>
+	      <textarea class="form-control" id="message-text" rows="5">
+What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Why do we use it? It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like). Where does it come from? Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32. The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham. Where can I get some? There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
+What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Why do we use it? It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like). Where does it come from? Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32. The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham. Where can I get some? There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.		      
+	      </textarea>
+<button id="gotobrand" name="gotobrnm" type="button" value"Login" style="width:100%;font-size:20px" class="btn btn-primary btmc1" onclick="$('#iadeinc').modal('hide');gobra(this.name)">Devam Et</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal -->
+
+<!-- Modal -->
+<div class="modal fade" id="iadeSucc" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Teşekkürler</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+<p class="modal-body">Üyeliğiniz Oluşturuldu ve Girişiniz Otomatik Olarak Yapıldı. Alışverişe Başlayabilirsiniz.</p>
+<button type="submit" value"Login" style="width:100%;font-size:20px" class="btn btn-primary" onclick="$('#iadeSucc').modal('hide')">Tamam</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal -->
+
+	
+
+
+
+
+
+<style>
+
+	
+	
+body {
+    //overflow-x: inherit;
+    overflow-y: scroll !important;
+}	
+	
+
+
+.modal {
+    overflow-y: auto !important;
+}
+
+.modal-open {
+    overflow: auto !important;
+}
+
+.modal-open[style] {
+    padding-right: 0px !important;
+}	
+	
+	
+	
+@-webkit-keyframes blinker {
+  from {opacity: 1.0;}
+  to {opacity: 0.0;}
+}
+.error{
+	text-decoration: blink !important;
+	-webkit-animation-name: blinker;
+	-webkit-animation-duration: 0.6s;
+	-webkit-animation-iteration-count:infinite;
+	-webkit-animation-timing-function:ease-in-out;
+	-webkit-animation-direction: alternate;
+	color: red;
+}	
+</style>	
+
+<script>
+	function getParameterByNames(name, url) {
+                                    if (!url) url = window.location.href;
+                                    name = name.replace(/[\[\]]/g, '\\$&');
+                                    var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+                                        results = regex.exec(url);
+                                    if (!results) return null;
+                                    if (!results[2]) return '';
+                                    return decodeURIComponent(results[2].replace(/\+/g, ' '));
+                                }
+
+var hashll = getParameterByNames("l");
+	if (hashll == "retry") {
+		
+		//alert("ok");
+		$(document).ready(function(){
+		$('#iadeLogin').modal('show');
+	document.getElementById("aftersnp").innerHTML = "<p style='color:red'><b>Tekrar Giriş Yapmayı Deneyiniz!</p>";
+		});				     
+	}
+</script>
+
+<script>
+$(document).ready(function () {
+	
+$("#username").keyup(function () {	
+if (username.value.length == username.maxLength) {
+      //$("#username").next('#rpassword').focus();
+      $("#username").parent().next().find('input').focus();
+    }
+});	
+	
+});	
+</script>	
+
+<script>
+$(document).ready(function () {
+  //called when key is pressed in textbox
+  $("#username").keypress(function (e) {
+     //if the letter is not digit then display error and don't type anything
+     if (e.which != 8 && e.which != 0 && (e.which < 48 || e.which > 57)) {
+        //display error message
+        //$("#errmsg").html("Digits Only").show().fadeOut("slow");
+               return false;
+    }
+	  
+   });
+});	
+</script>
+
+<script>
+$(document).ready(function () {
+	
+$('#username').one('keypress',(function(evt) {
+if (evt.which !== 48) {
+document.getElementById("username").value = "0";
+}
+}));
+
+$('#username').keypress(function(evt) {
+  if (document.getElementById("username").value == "5") {
+    document.getElementById("username").value = "05";
+  }
+});	
+	
+});	
+</script>	
+
+	
+
+<script>
+nmcr = document.cookie.search("fnln=");
+nmcrs2 = document.cookie.search("fnln=05061001090");
+if (nmcr>-0.5 && nmcrs2<-0.5) {var fival = "Çıkış Yap"; var sival = "Üye Panelim &raquo;"; var uyeg="ok";} 
+if (nmcr>-0.5 && nmcrs2>-0.5) {var fival = "Üye Girişi"; var sival = "Hemen Üye Ol &raquo;";}
+if (nmcr<-0.5) {var fival = "Üye Girişi"; var sival = "Hemen Üye Ol &raquo;"; document.cookie = "fnln=05061001090; expires = Thu, 01 Jan 2030 00:00:00 GMT; path=/; domain=.iade.com";}
+if (nmcr==="undefined") {var fival = "Giriş / Çıkış"; var sival = "Hemen Üye Ol &raquo;";}
+	
+function reply_click(clicked_id)
+{
+document.getElementById("staticBackdropLabelgoto").innerHTML = "https://"+clicked_id+".com"
+}
+
+	
+function gobra(wtgo) {
+    
+    location.href="https://iade.com/tr/go.html?brand="+wtgo.toLowerCase();    
+} 	
+
+if (uyeg=="ok")
+{
+    
+function oklf(clickoto) {
+    //$('#iadeinc').modal('show');
+    location.href="https://iade.com/tr/go.html?brand="+clickoto;}    
+} 
+else 
+{
+//document.getElementById("staticBackdropLabelgoto").innerHTML = this.id+" sitesine gidiyorsunuz...";	
+function oklf(clickoto) {
+	$('#iadeinc').modal('show');
+	document.getElementById("staticBackdropLabelgoto").innerHTML = "<img src='https://iade.com/imgs/"+clickoto.toLowerCase()+".jpg' width='50%' height='50%' class='imcls1'>";
+	document.getElementById("gotobrand").innerHTML = clickoto+" Sitesine Devam Et &raquo;";
+	document.getElementById("gotobrand").setAttribute("name",clickoto);
+	//reply_click(this.id);
+}     
+}
+</script> 
+<!--extra end -->      
+      <script src="js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+   </body>
+</html>
