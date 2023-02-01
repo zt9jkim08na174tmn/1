@@ -51,7 +51,8 @@ $.get('/cdn-cgi/trace', function(data) {
   var datax=JSON.parse(JSON.stringify(data)).loc;
   //document.getElementById("123").innerHTML=datax+navigator.language;
   var datax2 = datax.toLowerCase();
-  if (datax2=="tr") {$redir="yes";} 
+  if (datax2=="tr") {$redir="yes";}
+  if (datax2=="us") {$redir="yes";} 
   if ($redir=="yes") {location.href="https://iade.com/"+datax2+"/"+hashaprm;}  
 });
 }
