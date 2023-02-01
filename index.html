@@ -52,7 +52,14 @@ $.get('/cdn-cgi/trace', function(data) {
   //document.getElementById("123").innerHTML=datax+navigator.language;
   var datax2 = datax.toLowerCase();
   if (datax2=="tr") {$redir="yes";}
-  if (datax2=="us") {$redir="yes";} 
+  if (datax2=="us") {$redir="yes";}
+  if (datax2=="de") {$redir="yes";}
+  if (datax2=="fr") {$redir="yes";}
+  if (datax2=="nl") {$redir="yes";}
+  if (datax2=="uk") {$redir="yes";}
+  if (datax2=="ie") {$redir="yes";}
+  if (datax2=="ca") {$redir="yes";}
+  if (datax2=="au") {$redir="yes";}
   if ($redir=="yes") {location.href="https://iade.com/"+datax2+"/"+hashaprm;}  
 });
 }
