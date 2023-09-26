@@ -61,6 +61,7 @@ $.get('/cdn-cgi/trace', function(data) {
   if (datax2=="ie") {$redir="yes";}
   if (datax2=="ca") {$redir="yes";}
   if (datax2=="au") {$redir="yes";}
+  if (datax2=="ua") {$redir="yes";}
   if ($redir=="yes") {location.href="https://iade.com/"+datax2+"/"+hashaprm;}  
 });
 }
