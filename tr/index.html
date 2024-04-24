@@ -1353,7 +1353,21 @@ document.cookie = "isitapp="+zmoosa4+ expires + "; path=/; domain=.iade.com";
 } else {}
 </script>
 
+<script>
+ document.addEventListener("click", function(event) {
+        var selectElement = document.getElementById("inp");
+        var targetElement = event.target;
 
+        // Check if the clicked element is not the select element
+        if (targetElement !== selectElement) {
+            // Deselect all options
+            for (var i = 0; i < selectElement.options.length; i++) {
+                selectElement.options[i].selected = false;
+            }
+        }
+    });
+</script>
+				
 <script>
 (function() {
     var link = document.querySelector("link[rel*='icon']") || document.createElement('link');
