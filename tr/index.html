@@ -1353,6 +1353,70 @@ PostAffTracker.track();
 } catch (err) { }
 </script>
 
+<script>
+var hashlr10 = getParameterByNames("r10");
+
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// When the window is fully loaded, open the modal
+//window.onload = function() {
+  //modal.style.display = "block";
+//}
+
+// Close the modal when the user clicks on the close button
+var closeButton = document.querySelector(".close");
+closeButton.onclick = function() {
+  modal.style.display = "none";
+}
+
+// Close the modal when the user clicks anywhere outside of the modal content
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+if (hashlr10=="hostingkampanya") {modal.style.display = "block";}	
+</script>
+
+<style>
+    /* CSS for modal styling */
+    .modal {
+      display: none; /* Hidden by default */
+      position: fixed; /* Stay in place */
+      z-index: 1; /* Sit on top */
+      left: 0;
+      top: 0;
+      width: 100%; /* Full width */
+      height: 100%; /* Full height */
+      overflow: auto; /* Enable scroll if needed */
+      background-color: rgba(223,222,224,1); /* Black w/ opacity */
+    }
+
+    .modal-content {
+      background-color: #fefefe;
+      margin: 15% auto;
+      padding: 20px;
+      border: 1px solid #888;
+      width: 80%;
+    }
+  </style>
+
+
+
+
+<!-- Modal -->
+<div id="myModal" class="modal">
+  <div class="modal-content" style="text-align:center">
+    <!--<span class="close">&times;</span>-->
+    <h2 style="color:black">Alışverişlerinizden Para İadesi Kazanabilmek İçin Üye Olmalısınız!</h2><br>
+    <a href="https://iade.com"><h3 style="color:blue">Hemen Üye Ol &raquo;</h3></a><br>
+    <a href="https://iade.com"><h3 style="color:navy">Zaten Üyeyim<br>Üye Girişi Yap &raquo;</h3></a><br>
+    <a onclick="if (!window.__cfRLUnblockHandlers) return false; document.body.style.display = 'none';window.location.href=togoto;" style="cursor: pointer;" data-cf-modified-a5dfa1b17afa3810fd5a4bec-=""><h3 style="color:red">Üye Olmak İstemiyorum<br>Siteye Devam Et &raquo;</h3></a><br>
+    
+  </div>
+</div>				
 
 <div style="display:none"><button "id="featuretoggle" onclick="srtyumlkip()"></button></div>
 
