@@ -52,6 +52,25 @@
     </nav>
 	 
 <script>
+
+function paylasKazan(brand) {
+  const link = "https://iade.com/?paylas=" + encodeURIComponent(brand);
+
+  if (navigator.share) {
+    navigator.share({
+      title: brand + " alışverişinden iade kazan",
+      text: brand + " alışverişinden iade kazanmak için iade.com'u kullan.",
+      url: link
+    });
+  } else {
+    window.open(
+      "https://api.whatsapp.com/send?text=" + encodeURIComponent(brand + " alışverişinden iade kazan: " + link),
+      "_blank"
+    );
+  }
+}
+
+	
 function slugify(text) {
   const map = {
     'ç': 'c', 'Ç': 'c',
