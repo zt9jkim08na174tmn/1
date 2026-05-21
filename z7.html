@@ -441,7 +441,7 @@ const fruits = [
 fruits.forEach(myFunction);
 document.getElementById("demo").innerHTML = text;
 function myFunction(item, index) {
-text += '<div class="col-md-6"><div class="card text-center cm1"><img class="card-img-top" style="padding: 1rem;" src="/imgsnew1/'+slugify(item.split(";")[0])+'.jpg" alt="Card image cap"><div class="card-body"><h5 class="card-title">'+item.split(";")[0]+'</h5><p class="card-text">%'+parseFloat((parseFloat(item.split(";")[1]) * 0.33).toFixed(1))+' İade</p><a href="#" class="btn btn-primary" id="'+item.split(";")[0]+'" onclick="oklf(this.id)">İade Kazan</a><br><a href="#" style="display:block;margin-top:8px;font-size:13px;text-decoration:none;color:#198754;font-weight:bold" onclick="paylasKazan(\''+item.split(";")[0].replace(/'/g, "\\'")+'\');return false;">Paylaş Kazan</a></div></div></div>';
+text += '<div class="col-md-6"><div class="card text-center cm1"><img class="card-img-top" style="padding: 1rem;" src="/imgsnew1/'+slugify(item.split(";")[0])+'.jpg" alt="Card image cap"><div class="card-body"><h5 class="card-title">'+item.split(";")[0]+'</h5><p class="card-text">%'+parseFloat((parseFloat(item.split(";")[1]) * 0.33).toFixed(1))+' İade</p><a href="#" class="btn btn-primary" id="'+item.split(";")[0]+'" onclick="oklf(this.id)">İade Kazan</a><br><a href="#" style="display:block;margin-top:10px;font-size:13px;text-decoration:none;color:#198754;font-weight:bold" onclick="paylasKazan(\''+item.split(";")[0].replace(/'/g, "\\'")+'\');return false;">Paylaş Kazan <span style="font-size:11px">↗</span></a></div></div></div>';
 }
 </script>
 </div>
