@@ -51,7 +51,34 @@
       </div>
     </nav>
 	 
+<script>
+function slugify(text) {
+  const map = {
+    'ç': 'c', 'Ç': 'c',
+    'ğ': 'g', 'Ğ': 'g',
+    'ı': 'i', 'I': 'i', 'İ': 'i',
+    'ö': 'o', 'Ö': 'o',
+    'ş': 's', 'Ş': 's',
+    'ü': 'u', 'Ü': 'u',
+    '&': ' and '
+  };
 
+  // Türkçe karakter dönüşümü
+  text = text.replace(/[çÇğĞıIİöÖşŞüÜ&]/g, m => map[m]);
+
+  // Küçük harf
+  text = text.toLowerCase();
+
+  // Harf/rakam dışındakileri _
+  text = text.replace(/[^a-z0-9]+/g, '_');
+
+  // Baştaki/sondaki _
+  text = text.replace(/^_+|_+$/g, '');
+
+  return text || 'logo';
+}
+</script>
+	
    <script>
 	function hdfl2() {   
 	document.getElementById('mainp1').style.display = 'none'; 
@@ -395,7 +422,7 @@ const fruits = [
 fruits.forEach(myFunction);
 document.getElementById("demo").innerHTML = text;
 function myFunction(item, index) {
-  text += '<div class="col-md-6"><div class="card text-center cm1"><img class="card-img-top" style="padding: 1rem;" src="/imgsnew1/'+item.split(";")[0].toLowerCase()+'.jpg" alt="Card image cap"><div class="card-body"><h5 class="card-title">'+item.split(";")[0]+'</h5><p class="card-text">%'+item.split(";")[1]+' İade</p><a href="#" class="btn btn-primary" id="'+item.split(";")[0]+'" onclick="oklf(this.id)">Siteye Git</a></div></div></div>'; 
+  text += '<div class="col-md-6"><div class="card text-center cm1"><img class="card-img-top" style="padding: 1rem;" src="/imgsnew1/'+slugify(item.split(";")[0])+'.jpg" alt="Card image cap"><div class="card-body"><h5 class="card-title">'+item.split(";")[0]+'</h5><p class="card-text">%'+item.split(";")[1]+' İade</p><a href="#" class="btn btn-primary" id="'+item.split(";")[0]+'" onclick="oklf(this.id)">Siteye Git</a></div></div></div>'; 
 }
 </script>
 </div>
@@ -543,7 +570,7 @@ let textx = "";
 fruits.forEach(myFunctionx);
 document.getElementById("slick1").innerHTML = textx;
 function myFunctionx(item, index) {
-textx += '<div class="slide-item"><div class="card text-center"><img class="card-img-top centerit" style="border-radius:10px;width:90px;align:center" src="/imgsnew1/'+item.split(";")[0].toLowerCase()+'.jpg" alt="Card image cap"><div class="card-body"><p class="card-text">%'+item.split(";")[1]+' İade</p><a href="#" class="btn btn-primary" id="'+item.split(";")[0]+'" onclick="oklf(this.id)">Siteye Git</a></div></div></div>';
+textx += '<div class="slide-item"><div class="card text-center"><img class="card-img-top centerit" style="border-radius:10px;width:90px;align:center" src="/imgsnew1/'+slugify(item.split(";")[0])+'.jpg" alt="Card image cap"><div class="card-body"><p class="card-text">%'+item.split(";")[1]+' İade</p><a href="#" class="btn btn-primary" id="'+item.split(";")[0]+'" onclick="oklf(this.id)">Siteye Git</a></div></div></div>';
 }
 </script>	
 		
@@ -1355,7 +1382,7 @@ else
 //document.getElementById("staticBackdropLabelgoto").innerHTML = this.id+" sitesine gidiyorsunuz...";	
 function oklf(clickoto) {
 	$('#iadeinc').modal('show');
-	document.getElementById("staticBackdropLabelgoto").innerHTML = "<img src='https://iade.com/imgsnew1/"+clickoto.toLowerCase()+".jpg' width='50%' height='50%' class='imcls1'>";
+	document.getElementById("staticBackdropLabelgoto").innerHTML = "<img src='https://iade.com/imgsnew1/"+slugify(item.split(";")[0])+".jpg' width='50%' height='50%' class='imcls1'>";
 	document.getElementById("gotobrand").innerHTML = clickoto+" Sitesine Devam Et &raquo;";
 	document.getElementById("gotobrand").setAttribute("name",clickoto);
 	//reply_click(this.id);
