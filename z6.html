@@ -422,7 +422,7 @@ const fruits = [
 fruits.forEach(myFunction);
 document.getElementById("demo").innerHTML = text;
 function myFunction(item, index) {
-  text += '<div class="col-md-6"><div class="card text-center cm1"><img class="card-img-top" style="padding: 1rem;" src="/imgsnew1/'+slugify(item.split(";")[0])+'.jpg" alt="Card image cap"><div class="card-body"><h5 class="card-title">'+item.split(";")[0]+'</h5><p class="card-text">%'+item.split(";")[1]+' İade</p><a href="#" class="btn btn-primary" id="'+item.split(";")[0]+'" onclick="oklf(this.id)">Siteye Git</a></div></div></div>'; 
+  text += '<div class="col-md-6"><div class="card text-center cm1"><img class="card-img-top" style="padding: 1rem;" src="/imgsnew1/'+slugify(item.split(";")[0])+'.jpg" alt="Card image cap"><div class="card-body"><h5 class="card-title">'+item.split(";")[0]+'</h5><p class="card-text">%'+parseFloat((parseFloat(item.split(";")[1]) * 0.33).toFixed(1))+' İade</p><a href="#" class="btn btn-primary" id="'+item.split(";")[0]+'" onclick="oklf(this.id)">Siteye Git</a></div></div></div>'; 
 }
 </script>
 </div>
@@ -570,7 +570,7 @@ let textx = "";
 fruits.forEach(myFunctionx);
 document.getElementById("slick1").innerHTML = textx;
 function myFunctionx(item, index) {
-textx += '<div class="slide-item"><div class="card text-center"><img class="card-img-top centerit" style="border-radius:10px;width:90px;align:center" src="/imgsnew1/'+slugify(item.split(";")[0])+'.jpg" alt="Card image cap"><div class="card-body"><p class="card-text">%'+item.split(";")[1]+' İade</p><a href="#" class="btn btn-primary" id="'+item.split(";")[0]+'" onclick="oklf(this.id)">Siteye Git</a></div></div></div>';
+textx += '<div class="slide-item"><div class="card text-center"><img class="card-img-top centerit" style="border-radius:10px;width:90px;align:center" src="/imgsnew1/'+slugify(item.split(";")[0])+'.jpg" alt="Card image cap"><div class="card-body"><p class="card-text">%'+parseFloat((parseFloat(item.split(";")[1]) * 0.33).toFixed(1))+' İade</p><a href="#" class="btn btn-primary" id="'+item.split(";")[0]+'" onclick="oklf(this.id)">Siteye Git</a></div></div></div>';
 }
 </script>	
 		
@@ -656,7 +656,7 @@ let texty = "";
 fruits.forEach(myFunctiony);
 document.getElementById("demorow").innerHTML = texty;
 function myFunctiony(item, index) {
-texty += '<div class="col-4 col-lg-2"><div class="well"><span>'+item.split(";")[0]+'</span><br><span id="'+item.split(";")[0].toLowerCase()+'">%'+item.split(";")[1]+' İade</span></div></div>';
+texty += '<div class="col-4 col-lg-2"><div class="well"><span>'+item.split(";")[0]+'</span><br><span id="'+item.split(";")[0].toLowerCase()+'">%'+parseFloat((parseFloat(item.split(";")[1]) * 0.33).toFixed(1))+' İade</span></div></div>';
 }
 </script>	    
 		    
