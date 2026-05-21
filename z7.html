@@ -422,7 +422,7 @@ const fruits = [
 fruits.forEach(myFunction);
 document.getElementById("demo").innerHTML = text;
 function myFunction(item, index) {
-text += '<div class="col-md-6"><div class="card text-center cm1"><img class="card-img-top" style="padding: 1rem;" src="/imgsnew1/'+slugify(item.split(";")[0])+'.jpg" alt="Card image cap"><div class="card-body"><h5 class="card-title">'+item.split(";")[0]+'</h5><p class="card-text">%'+parseFloat((parseFloat(item.split(";")[1]) * 0.33).toFixed(1))+' İade</p><a href="#" class="btn btn-primary" id="'+item.split(";")[0]+'" onclick="oklf(this.id)">Siteye Git</a><br><a href="#" style="display:block;margin-top:8px;font-size:13px;text-decoration:none;color:#198754;font-weight:bold" onclick="paylasKazan(\''+item.split(";")[0].replace(/'/g, "\\'")+'\');return false;">Paylaş Kazan</a></div></div></div>';
+text += '<div class="col-md-6"><div class="card text-center cm1"><img class="card-img-top" style="padding: 1rem;" src="/imgsnew1/'+slugify(item.split(";")[0])+'.jpg" alt="Card image cap"><div class="card-body"><h5 class="card-title">'+item.split(";")[0]+'</h5><p class="card-text">%'+parseFloat((parseFloat(item.split(";")[1]) * 0.33).toFixed(1))+' İade</p><a href="#" class="btn btn-primary" id="'+item.split(";")[0]+'" onclick="oklf(this.id)">İade Kazan</a><br><a href="#" style="display:block;margin-top:8px;font-size:13px;text-decoration:none;color:#198754;font-weight:bold" onclick="paylasKazan(\''+item.split(";")[0].replace(/'/g, "\\'")+'\');return false;">Paylaş Kazan</a></div></div></div>';
 }
 </script>
 </div>
@@ -483,7 +483,7 @@ text += '<div class="col-md-6"><div class="card text-center cm1"><img class="car
       <div class="modal-body">
           <div id="neyaz" style="text-align:center"></div>  
        
-            <p style="text-align:center;color:blue" data-toggle="modal" data-target="#iadeLogin"><a style="text-decoration: none;" href="" data-bs-dismiss="modal" aria-label="Close">Siteye Git &raquo;</a></p>
+            <p style="text-align:center;color:blue" data-toggle="modal" data-target="#iadeLogin"><a style="text-decoration: none;" href="" data-bs-dismiss="modal" aria-label="Close">İade Kazan &raquo;</a></p>
 <button type="button" class="btn btn-default" data-toggle="modal" data-target="#iadeLogin" data-dismiss="modal">Close current, Launch Modal #3</button>
         </div>
       </div>
@@ -570,7 +570,7 @@ let textx = "";
 fruits.forEach(myFunctionx);
 document.getElementById("slick1").innerHTML = textx;
 function myFunctionx(item, index) {
-textx += '<div class="slide-item"><div class="card text-center"><img class="card-img-top centerit" style="border-radius:10px;width:90px;align:center" src="/imgsnew1/'+slugify(item.split(";")[0])+'.jpg" alt="Card image cap"><div class="card-body"><p class="card-text">%'+parseFloat((parseFloat(item.split(";")[1]) * 0.33).toFixed(1))+' İade</p><a href="#" class="btn btn-primary" id="'+item.split(";")[0]+'" onclick="oklf(this.id)">Siteye Git</a><br><a href="#" style="display:block;margin-top:8px;font-size:13px;text-decoration:none;color:#198754;font-weight:bold" onclick="paylasKazan(\''+item.split(";")[0].replace(/'/g, "\\'")+'\');return false;">Paylaş Kazan</a></div></div></div>';
+textx += '<div class="slide-item"><div class="card text-center"><img class="card-img-top centerit" style="border-radius:10px;width:90px;align:center" src="/imgsnew1/'+slugify(item.split(";")[0])+'.jpg" alt="Card image cap"><div class="card-body"><p class="card-text">%'+parseFloat((parseFloat(item.split(";")[1]) * 0.33).toFixed(1))+' İade</p><a href="#" class="btn btn-primary" id="'+item.split(";")[0]+'" onclick="oklf(this.id)">İade Kazan</a><br><a href="#" style="display:block;margin-top:8px;font-size:13px;text-decoration:none;color:#198754;font-weight:bold" onclick="paylasKazan(\''+item.split(";")[0].replace(/'/g, "\\'")+'\');return false;">Paylaş Kazan</a></div></div></div>';
 }
 </script>	
 		
